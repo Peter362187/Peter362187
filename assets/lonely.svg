@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="753" height="442"
-     viewBox="0 0 753 442" role="img"
+<svg xmlns="http://www.w3.org/2000/svg" width="753" height="393"
+     viewBox="0 0 753 393" role="img"
      aria-label="l4rp@github: ~/lonely - animiertes Terminal">
 <title>l4rp@github: ~/lonely</title>
 <defs>
@@ -18,10 +18,10 @@
                 flood-color="#000000" flood-opacity="0.85"/>
 </filter>
 <clipPath id="win">
-  <rect width="713" height="402" rx="8"/>
+  <rect width="713" height="353" rx="8"/>
 </clipPath>
-<clipPath id="clip0"><rect class="tp0" x="183.0" y="43.0" width="193.8" height="24.6"/></clipPath>
-<clipPath id="clip1"><rect class="tp1" x="183.0" y="190.9" width="285.6" height="24.6"/></clipPath>
+<clipPath id="clip0"><rect class="tp0" x="183.0" y="43.0" width="357.0" height="24.6"/></clipPath>
+<clipPath id="clip1"><rect class="tp1" x="183.0" y="141.6" width="285.6" height="24.6"/></clipPath>
 </defs>
 <style>
   text{font-family:ui-monospace,'DejaVu Sans Mono','Liberation Mono','Courier New',monospace;font-size:17.0px;
@@ -37,52 +37,48 @@
     g,text{opacity:1!important}
     .cur{opacity:0!important}
   }
-  @keyframes ap0{0%,8.154%{opacity:0}8.165%,100%{opacity:1}}
-  .ap0{opacity:0;animation:ap0 8.59s linear 1 forwards}
-  @keyframes tp0{0%,8.154%{transform:translateX(-193.8px)}20.326%,100%{transform:translateX(0)}}
-  .tp0{animation:tp0 8.59s steps(19) 1 forwards}
-  @keyframes cw0{0%,8.154%{opacity:0}8.165%,24.403%{opacity:1}24.415%,100%{opacity:0}}
-  .cw0{opacity:0;animation:cw0 8.59s linear 1 forwards}
-  @keyframes cm0{0%,8.154%{transform:translateX(0)}20.326%,100%{transform:translateX(193.8px)}}
-  .cm0{animation:cm0 8.59s steps(19) 1 forwards}
-  @keyframes o0_0{0%,24.403%{opacity:0}24.415%,100%{opacity:1}}
-  .o0_0{opacity:0;animation:o0_0 8.59s linear 1 forwards}
-  @keyframes o0_1{0%,25.684%{opacity:0}25.696%,100%{opacity:1}}
-  .o0_1{opacity:0;animation:o0_1 8.59s linear 1 forwards}
-  @keyframes o0_2{0%,26.966%{opacity:0}26.977%,100%{opacity:1}}
-  .o0_2{opacity:0;animation:o0_2 8.59s linear 1 forwards}
-  @keyframes o0_3{0%,28.247%{opacity:0}28.259%,100%{opacity:1}}
-  .o0_3{opacity:0;animation:o0_3 8.59s linear 1 forwards}
-  @keyframes o0_4{0%,29.528%{opacity:0}29.540%,100%{opacity:1}}
-  .o0_4{opacity:0;animation:o0_4 8.59s linear 1 forwards}
-  @keyframes ap1{0%,45.952%{opacity:0}45.964%,100%{opacity:1}}
-  .ap1{opacity:0;animation:ap1 8.59s linear 1 forwards}
-  @keyframes tp1{0%,45.952%{transform:translateX(-285.6px)}63.891%,100%{transform:translateX(0)}}
-  .tp1{animation:tp1 8.59s steps(28) 1 forwards}
-  @keyframes cw1{0%,45.952%{opacity:0}45.964%,67.967%{opacity:1}67.979%,100%{opacity:0}}
-  .cw1{opacity:0;animation:cw1 8.59s linear 1 forwards}
-  @keyframes cm1{0%,45.952%{transform:translateX(0)}63.891%,100%{transform:translateX(285.6px)}}
-  .cm1{animation:cm1 8.59s steps(28) 1 forwards}
-  @keyframes o1_0{0%,67.967%{opacity:0}67.979%,100%{opacity:1}}
-  .o1_0{opacity:0;animation:o1_0 8.59s linear 1 forwards}
-  @keyframes o1_1{0%,69.249%{opacity:0}69.260%,100%{opacity:1}}
-  .o1_1{opacity:0;animation:o1_1 8.59s linear 1 forwards}
-  @keyframes o1_2{0%,70.530%{opacity:0}70.542%,100%{opacity:1}}
-  .o1_2{opacity:0;animation:o1_2 8.59s linear 1 forwards}
-  @keyframes o1_3{0%,71.811%{opacity:0}71.823%,100%{opacity:1}}
-  .o1_3{opacity:0;animation:o1_3 8.59s linear 1 forwards}
-  @keyframes o1_4{0%,73.093%{opacity:0}73.104%,100%{opacity:1}}
-  .o1_4{opacity:0;animation:o1_4 8.59s linear 1 forwards}
-  @keyframes fin{0%,88.352%{opacity:0}88.363%,100%{opacity:1}}
-  .fin{opacity:0;animation:fin 8.59s linear 1 forwards}
+  @keyframes ap0{0%,7.572%{opacity:0}7.582%,100%{opacity:1}}
+  .ap0{opacity:0;animation:ap0 9.25s linear 1 forwards}
+  @keyframes tp0{0%,7.572%{transform:translateX(-357.0px)}28.394%,100%{transform:translateX(0)}}
+  .tp0{animation:tp0 9.25s steps(35) 1 forwards}
+  @keyframes cw0{0%,7.572%{opacity:0}7.582%,32.180%{opacity:1}32.190%,100%{opacity:0}}
+  .cw0{opacity:0;animation:cw0 9.25s linear 1 forwards}
+  @keyframes cm0{0%,7.572%{transform:translateX(0)}28.394%,100%{transform:translateX(357.0px)}}
+  .cm0{animation:cm0 9.25s steps(35) 1 forwards}
+  @keyframes o0_0{0%,32.180%{opacity:0}32.190%,100%{opacity:1}}
+  .o0_0{opacity:0;animation:o0_0 9.25s linear 1 forwards}
+  @keyframes o0_1{0%,33.369%{opacity:0}33.380%,100%{opacity:1}}
+  .o0_1{opacity:0;animation:o0_1 9.25s linear 1 forwards}
+  @keyframes o0_2{0%,34.559%{opacity:0}34.570%,100%{opacity:1}}
+  .o0_2{opacity:0;animation:o0_2 9.25s linear 1 forwards}
+  @keyframes ap1{0%,49.811%{opacity:0}49.822%,100%{opacity:1}}
+  .ap1{opacity:0;animation:ap1 9.25s linear 1 forwards}
+  @keyframes tp1{0%,49.811%{transform:translateX(-285.6px)}66.468%,100%{transform:translateX(0)}}
+  .tp1{animation:tp1 9.25s steps(28) 1 forwards}
+  @keyframes cw1{0%,49.811%{opacity:0}49.822%,70.254%{opacity:1}70.265%,100%{opacity:0}}
+  .cw1{opacity:0;animation:cw1 9.25s linear 1 forwards}
+  @keyframes cm1{0%,49.811%{transform:translateX(0)}66.468%,100%{transform:translateX(285.6px)}}
+  .cm1{animation:cm1 9.25s steps(28) 1 forwards}
+  @keyframes o1_0{0%,70.254%{opacity:0}70.265%,100%{opacity:1}}
+  .o1_0{opacity:0;animation:o1_0 9.25s linear 1 forwards}
+  @keyframes o1_1{0%,71.444%{opacity:0}71.455%,100%{opacity:1}}
+  .o1_1{opacity:0;animation:o1_1 9.25s linear 1 forwards}
+  @keyframes o1_2{0%,72.634%{opacity:0}72.645%,100%{opacity:1}}
+  .o1_2{opacity:0;animation:o1_2 9.25s linear 1 forwards}
+  @keyframes o1_3{0%,73.824%{opacity:0}73.835%,100%{opacity:1}}
+  .o1_3{opacity:0;animation:o1_3 9.25s linear 1 forwards}
+  @keyframes o1_4{0%,75.014%{opacity:0}75.024%,100%{opacity:1}}
+  .o1_4{opacity:0;animation:o1_4 9.25s linear 1 forwards}
+  @keyframes fin{0%,89.183%{opacity:0}89.194%,100%{opacity:1}}
+  .fin{opacity:0;animation:fin 9.25s linear 1 forwards}
 </style>
-<rect width="753" height="442" rx="12" fill="url(#vig)"/>
-<rect width="753" height="442" rx="12" fill="url(#grid)"/>
+<rect width="753" height="393" rx="12" fill="url(#vig)"/>
+<rect width="753" height="393" rx="12" fill="url(#grid)"/>
 <g transform="translate(20,20)">
-  <rect width="713" height="402" rx="8" fill="#000000" filter="url(#shadow)"/>
+  <rect width="713" height="353" rx="8" fill="#000000" filter="url(#shadow)"/>
   <g clip-path="url(#win)">
     <rect width="713" height="36.0" fill="#0e0e12"/>
-    <rect y="36.0" width="713" height="366.0"
+    <rect y="36.0" width="713" height="317.0"
           fill="url(#scan)"/>
   </g>
   <line x1="1" y1="36.0" x2="712" y2="36.0" stroke="#2b2b32"/>
@@ -90,29 +86,27 @@
   <text class="ttl" x="356.5" y="23" text-anchor="middle">l4rp@github: ~/lonely</text>
 <g class="ap0">
 <text class="dim" x="30.0" y="60.0" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
-<g clip-path="url(#clip0)"><text class="cmd" x="183.0" y="60.0" textLength="193.8" lengthAdjust="spacing">neofetch girlfriend</text></g>
+<g clip-path="url(#clip0)"><text class="cmd" x="183.0" y="60.0" textLength="357.0" lengthAdjust="spacing">find / -name girlfriend 2&gt;/dev/null</text></g>
 <g class="cw0 cur"><g class="cm0"><rect class="blink" x="183.0" y="45.0" width="10.2" height="17.0"/></g></g>
 </g>
-<text class="out o0_0" x="30.0" y="84.7" textLength="408.0" lengthAdjust="spacing">   ________        girlfriend: not found</text>
-<text class="out o0_1" x="30.0" y="109.3" textLength="316.2" lengthAdjust="spacing">  /        \       status : 404</text>
-<text class="out o0_2" x="30.0" y="133.9" textLength="316.2" lengthAdjust="spacing"> |   404    |      uptime : n/a</text>
-<text class="out o0_3" x="30.0" y="158.6" textLength="367.2" lengthAdjust="spacing">  \________/       disk   : 0 B used</text>
-<text class="out o0_4" x="30.0" y="183.2" textLength="469.2" lengthAdjust="spacing">                   hint   : apt install shower</text>
+<text class="out o0_0" x="30.0" y="84.7" textLength="336.6" lengthAdjust="spacing">find: no matches in 4 filesystems</text>
+<text class="out o0_1" x="30.0" y="109.3" textLength="561.0" lengthAdjust="spacing">  reason : hypergamie.service holds all open references</text>
+<text class="out o0_2" x="30.0" y="133.9" textLength="244.8" lengthAdjust="spacing">  retry  : not scheduled</text>
 <g class="ap1">
-<text class="dim" x="30.0" y="207.9" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
-<g clip-path="url(#clip1)"><text class="cmd" x="183.0" y="207.9" textLength="285.6" lengthAdjust="spacing">sudo apt install being-funny</text></g>
-<g class="cw1 cur"><g class="cm1"><rect class="blink" x="183.0" y="192.9" width="10.2" height="17.0"/></g></g>
+<text class="dim" x="30.0" y="158.6" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
+<g clip-path="url(#clip1)"><text class="cmd" x="183.0" y="158.6" textLength="285.6" lengthAdjust="spacing">sudo apt install being-funny</text></g>
+<g class="cw1 cur"><g class="cm1"><rect class="blink" x="183.0" y="143.6" width="10.2" height="17.0"/></g></g>
 </g>
-<text class="out o1_0" x="30.0" y="232.5" textLength="561.0" lengthAdjust="spacing">Note: selecting 'looksmaxxing' instead of 'being-funny'</text>
-<text class="out o1_1" x="30.0" y="257.2" textLength="336.6" lengthAdjust="spacing">Setting up jawline (2.0) ... done</text>
-<text class="out o1_2" x="30.0" y="281.9" textLength="346.8" lengthAdjust="spacing">Setting up filler (1.5ml) ... done</text>
-<text class="out o1_3" x="30.0" y="306.5" textLength="408.0" lengthAdjust="spacing">Setting up height-booster (5cm) ... done</text>
-<text class="out o1_4" x="30.0" y="331.1" textLength="550.8" lengthAdjust="spacing">Personality: unchanged. 0 upgraded, 3 newly installed.</text>
+<text class="out o1_0" x="30.0" y="183.2" textLength="561.0" lengthAdjust="spacing">Note: selecting 'looksmaxxing' instead of 'being-funny'</text>
+<text class="out o1_1" x="30.0" y="207.9" textLength="336.6" lengthAdjust="spacing">Setting up jawline (2.0) ... done</text>
+<text class="out o1_2" x="30.0" y="232.5" textLength="346.8" lengthAdjust="spacing">Setting up filler (1.5ml) ... done</text>
+<text class="out o1_3" x="30.0" y="257.2" textLength="408.0" lengthAdjust="spacing">Setting up height-booster (5cm) ... done</text>
+<text class="out o1_4" x="30.0" y="281.9" textLength="550.8" lengthAdjust="spacing">Personality: unchanged. 0 upgraded, 3 newly installed.</text>
 <g class="fin">
-<text class="dim" x="30.0" y="355.8" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
-<rect class="blink" x="183.0" y="340.8" width="10.2" height="17.0"/>
+<text class="dim" x="30.0" y="306.5" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
+<rect class="blink" x="183.0" y="291.5" width="10.2" height="17.0"/>
 </g>
-  <rect x="0.5" y="0.5" width="712" height="401" rx="8"
+  <rect x="0.5" y="0.5" width="712" height="352" rx="8"
         fill="none" stroke="#33333a"/>
 </g>
 </svg>

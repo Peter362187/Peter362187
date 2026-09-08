@@ -73,21 +73,12 @@ drwxr-xr-x  l4rp  git         branches are cheap, force-push is not
 
 <p align="center">
   <img src="assets/lonely.svg" width="753"
-       alt="neofetch girlfriend — not found, status 404. Danach apt install being-funny, das stattdessen jawline, filler und height-booster einrichtet; Personality: unchanged.">
+       alt="find / -name girlfriend — keine Treffer, reason: hypergamie.service haelt alle Referenzen. Danach apt install being-funny, das stattdessen jawline, filler und height-booster einrichtet; Personality: unchanged.">
 </p>
 
 <img src="assets/divider.svg" width="753" alt="">
 
-## `// 04` upgrade
-
-<p align="center">
-  <img src="assets/pacman.svg" width="753"
-       alt="sudo pacman -Syu — Datenbanken synchronisieren, drei Pakete aktualisieren, danach uname -r.">
-</p>
-
-<img src="assets/divider.svg" width="753" alt="">
-
-## `// 05` uplink
+## `// 04` uplink
 
 Das Projekt baut Arch-ISOs — auch von Windows aus. Die PowerShell ist
 dabei ehrlich gesagt nur der Bootloader.
@@ -99,7 +90,7 @@ dabei ehrlich gesagt nur der Bootloader.
 
 <img src="assets/divider.svg" width="753" alt="">
 
-## `// 06` telemetry
+## `// 05` telemetry
 
 <p align="center">
   <img src="assets/stats.svg" width="753"
@@ -111,7 +102,7 @@ ausfallen kann. Aktualisiert sich woechentlich per Action.</sub>
 
 <img src="assets/divider.svg" width="753" alt="">
 
-## `// 07` payloads
+## `// 06` payloads
 
 ### [`Easy-Arch-Linux`](https://github.com/Peter362187/Easy-Arch-Linux)
 
@@ -130,7 +121,7 @@ $ ./easy-arch --help
 
 <img src="assets/divider.svg" width="753" alt="">
 
-## `// 08` classified
+## `// 07` classified
 
 <details>
 <summary><code>$ dmesg | tail</code></summary>

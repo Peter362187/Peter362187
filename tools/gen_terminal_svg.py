@@ -386,13 +386,10 @@ SCENES = [
         cols=64,
         title="l4rp@github: ~/lonely",
         steps=[
-            # ASCII-Block belegt Spalte 0-18, die Infospalte beginnt bei 19.
-            Step("neofetch girlfriend", [
-                "   ________        girlfriend: not found",
-                "  /        \\       status : 404",
-                " |   404    |      uptime : n/a",
-                "  \\________/       disk   : 0 B used",
-                "                   hint   : apt install shower",
+            Step("find / -name girlfriend 2>/dev/null", [
+                "find: no matches in 4 filesystems",
+                "  reason : hypergamie.service holds all open references",
+                "  retry  : not scheduled",
             ], pause=1.3),
             # "Note: selecting X instead of Y" ist echte apt-Ausgabe - dadurch
             # wirkt die Paketvertauschung wie ein Systemverhalten, nicht wie
@@ -404,25 +401,6 @@ SCENES = [
                 "Setting up height-booster (5cm) ... done",
                 "Personality: unchanged. 0 upgraded, 3 newly installed.",
             ], pause=1.2),
-        ],
-    ),
-    Scene(
-        name="pacman",
-        cols=64,
-        title="l4rp@github: ~/pacman",
-        steps=[
-            Step("sudo pacman -Syu", [
-                ":: Synchronising package databases...",
-                " core            152.4 KiB  4.21 MiB/s 00:00 [###] 100%",
-                " extra             8.3 MiB  9.04 MiB/s 00:01 [###] 100%",
-                ":: Starting full system upgrade...",
-                "resolving dependencies...",
-                "Packages (3) linux-6.11.5  python-3.13.1  vim-9.1",
-                "Total Installed Size:  412.08 MiB",
-                ":: Proceed with installation? [Y/n] y",
-                "(3/3) upgrading vim        [##############] 100%",
-            ], pause=1.4),
-            Step("uname -r", ["6.11.5-arch1-1"], pause=1.2),
         ],
     ),
     Scene(
