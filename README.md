@@ -115,6 +115,7 @@ $ ./easy-arch --help
 [    2.718281] opsec: module loaded, verbosity=0
 [    3.141592] usb 1-1: new device found, idVendor=dead, idProduct=beef
 [    4.000000] EXT4-fs (sda2): mounted filesystem with ordered data mode
+[    5.550000] hypergamie: module loaded, refcount=1, cannot unload
 [    8.675309] hypervisor: nested virtualisation detected, we must go deeper
 [   13.370000] motivation[1337]: segfault at 0900 ip 00007f caffeine not found
 [   21.000000] systemd[1]: motivation.service: scheduled restart

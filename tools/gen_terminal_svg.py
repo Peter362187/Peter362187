@@ -322,10 +322,14 @@ SCENES = [
         steps=[
             Step("systemctl status motivation", [
                 "* motivation.service - Motivation Daemon",
-                "     Loaded: loaded (/etc/systemd/system/motivation.service)",
                 "     Active: active (running) since Mon 04:12:07",
-                "   Main PID: 1337 (motivation)",
                 "     Memory: 2.1G (mostly coffee)",
+            ], pause=1.1),
+            Step("systemctl status hypergamie", [
+                "* hypergamie.service - Hypergamie Daemon",
+                "     Loaded: loaded (/etc/systemd/system/hypergamie.service)",
+                "     Active: active (running) since forever",
+                "     Status: \"mask failed: unit is load-bearing\"",
             ], pause=1.2),
             Step("sudo rm -rf /doubt", [
                 "rm: cannot remove '/doubt': Device or resource busy",
