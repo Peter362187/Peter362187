@@ -1,0 +1,3 @@
+# Generatoren schreiben LF; ohne das meldet Git unter Windows
+# staendig Aenderungen, sobald die SVGs neu erzeugt werden.
+* text=auto eol=lf
