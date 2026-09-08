@@ -79,7 +79,7 @@ drwxr-xr-x  l4rp  git         branches are cheap, force-push is not
 </td>
 <td width="50%">
   <img src="assets/lonely.svg" width="100%"
-       alt="neofetch girlfriend — not found, status 404, hint: apt install shower.">
+       alt="neofetch girlfriend — not found, status 404. Danach apt install being-funny, das stattdessen jawline, filler und height-booster einrichtet; Personality: unchanged.">
 </td>
 </tr>
 </table>

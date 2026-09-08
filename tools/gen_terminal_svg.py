@@ -386,9 +386,15 @@ SCENES = [
                 "  \\________/       disk   : 0 B used",
                 "                   hint   : apt install shower",
             ], pause=1.3),
-            Step("sudo apt install girlfriend", [
-                "E: Unable to locate package girlfriend",
-                "E: Did you mean 'gnome-shell-extension-clock'?",
+            # "Note: selecting X instead of Y" ist echte apt-Ausgabe - dadurch
+            # wirkt die Paketvertauschung wie ein Systemverhalten, nicht wie
+            # ein hingeschriebener Witz.
+            Step("sudo apt install being-funny", [
+                "Note: selecting 'looksmaxxing' instead of 'being-funny'",
+                "Setting up jawline (2.0) ... done",
+                "Setting up filler (1.5ml) ... done",
+                "Setting up height-booster (5cm) ... done",
+                "Personality: unchanged. 0 upgraded, 3 newly installed.",
             ], pause=1.2),
         ],
     ),
