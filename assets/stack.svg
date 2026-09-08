@@ -1,21 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="628" height="364"
-     viewBox="0 0 628 364" role="img"
+<svg xmlns="http://www.w3.org/2000/svg" width="713" height="419"
+     viewBox="0 0 713 419" role="img"
      aria-label="l4rp@github: ~/stack - animiertes Terminal">
 <title>l4rp@github: ~/stack</title>
 <defs>
 <pattern id="scan" width="1" height="3" patternUnits="userSpaceOnUse">
   <rect width="1" height="1" fill="#ffffff" opacity="0.045"/>
 </pattern>
-<clipPath id="clip0"><rect class="tp0" x="161.0" y="41.0" width="153.0" height="24.0"/></clipPath>
-<clipPath id="clip1"><rect class="tp1" x="161.0" y="209.0" width="189.0" height="24.0"/></clipPath>
+<clipPath id="clip0"><rect class="tp0" x="183.0" y="43.0" width="173.4" height="28.0"/></clipPath>
+<clipPath id="clip1"><rect class="tp1" x="183.0" y="239.3" width="214.2" height="28.0"/></clipPath>
 </defs>
 <style>
-  text{font-family:ui-monospace,'DejaVu Sans Mono','Liberation Mono','Courier New',monospace;font-size:15.0px;
+  text{font-family:ui-monospace,'DejaVu Sans Mono','Liberation Mono','Courier New',monospace;font-size:17.0px;
     dominant-baseline:auto;white-space:pre}
   .cmd{fill:#f2f2f2}
   .out{fill:#a8a8a8}
   .dim{fill:#6f6f6f}
-  .ttl{fill:#7a7a7a;font-size:12px;letter-spacing:1px}
+  .ttl{fill:#7a7a7a;font-size:13px;letter-spacing:1px}
   .blink{fill:#f2f2f2;animation:bl 1.06s steps(1) infinite}
   @keyframes bl{0%,49%{opacity:1}50%,100%{opacity:0}}
   @media (prefers-reduced-motion:reduce){
@@ -25,11 +25,11 @@
   }
   @keyframes ap0{0%,8.772%{opacity:0}8.784%,100%{opacity:1}}
   .ap0{opacity:0;animation:ap0 7.98s linear 1 forwards}
-  @keyframes tp0{0%,8.772%{transform:translateX(-153.0px)}20.489%,100%{transform:translateX(0)}}
+  @keyframes tp0{0%,8.772%{transform:translateX(-173.4px)}20.489%,100%{transform:translateX(0)}}
   .tp0{animation:tp0 7.98s steps(17) 1 forwards}
   @keyframes cw0{0%,8.772%{opacity:0}8.784%,24.875%{opacity:1}24.887%,100%{opacity:0}}
   .cw0{opacity:0;animation:cw0 7.98s linear 1 forwards}
-  @keyframes cm0{0%,8.772%{transform:translateX(0)}20.489%,100%{transform:translateX(153.0px)}}
+  @keyframes cm0{0%,8.772%{transform:translateX(0)}20.489%,100%{transform:translateX(173.4px)}}
   .cm0{animation:cm0 7.98s steps(17) 1 forwards}
   @keyframes o0_0{0%,24.875%{opacity:0}24.887%,100%{opacity:1}}
   .o0_0{opacity:0;animation:o0_0 7.98s linear 1 forwards}
@@ -45,11 +45,11 @@
   .o0_5{opacity:0;animation:o0_5 7.98s linear 1 forwards}
   @keyframes ap1{0%,49.436%{opacity:0}49.449%,100%{opacity:1}}
   .ap1{opacity:0;animation:ap1 7.98s linear 1 forwards}
-  @keyframes tp1{0%,49.436%{transform:translateX(-189.0px)}63.910%,100%{transform:translateX(0)}}
+  @keyframes tp1{0%,49.436%{transform:translateX(-214.2px)}63.910%,100%{transform:translateX(0)}}
   .tp1{animation:tp1 7.98s steps(21) 1 forwards}
   @keyframes cw1{0%,49.436%{opacity:0}49.449%,68.296%{opacity:1}68.308%,100%{opacity:0}}
   .cw1{opacity:0;animation:cw1 7.98s linear 1 forwards}
-  @keyframes cm1{0%,49.436%{transform:translateX(0)}63.910%,100%{transform:translateX(189.0px)}}
+  @keyframes cm1{0%,49.436%{transform:translateX(0)}63.910%,100%{transform:translateX(214.2px)}}
   .cm1{animation:cm1 7.98s steps(21) 1 forwards}
   @keyframes o1_0{0%,68.296%{opacity:0}68.308%,100%{opacity:1}}
   .o1_0{opacity:0;animation:o1_0 7.98s linear 1 forwards}
@@ -60,35 +60,35 @@
   @keyframes fin{0%,87.469%{opacity:0}87.481%,100%{opacity:1}}
   .fin{opacity:0;animation:fin 7.98s linear 1 forwards}
 </style>
-<rect width="628" height="364" rx="7" fill="#000000"/>
-<rect x="0.5" y="0.5" width="627" height="363" rx="7"
+<rect width="713" height="419" rx="7" fill="#000000"/>
+<rect x="0.5" y="0.5" width="712" height="418" rx="7"
       fill="none" stroke="#303030"/>
-<rect x="1" y="34.0" width="626" height="329.0"
+<rect x="1" y="36.0" width="711" height="382.0"
       fill="url(#scan)"/>
-<line x1="1" y1="34.0" x2="627" y2="34.0" stroke="#262626"/>
-<rect x="18" y="14" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/><rect x="33" y="14" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/><rect x="48" y="14" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/>
-<text class="ttl" x="314.0" y="22" text-anchor="middle">l4rp@github: ~/stack</text>
+<line x1="1" y1="36.0" x2="712" y2="36.0" stroke="#262626"/>
+<rect x="20" y="15" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/><rect x="36" y="15" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/><rect x="52" y="15" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/>
+<text class="ttl" x="356.5" y="23" text-anchor="middle">l4rp@github: ~/stack</text>
 <g class="ap0">
-<text class="dim" x="26.0" y="56.0" textLength="135.0" lengthAdjust="spacing">user@github:~$ </text>
-<g clip-path="url(#clip0)"><text class="cmd" x="161.0" y="56.0" textLength="153.0" lengthAdjust="spacing">neofetch --stdout</text></g>
-<g class="cw0 cur"><g class="cm0"><rect class="blink" x="161.0" y="43.0" width="9.0" height="15.0"/></g></g>
+<text class="dim" x="30.0" y="60.0" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
+<g clip-path="url(#clip0)"><text class="cmd" x="183.0" y="60.0" textLength="173.4" lengthAdjust="spacing">neofetch --stdout</text></g>
+<g class="cw0 cur"><g class="cm0"><rect class="blink" x="183.0" y="45.0" width="10.2" height="17.0"/></g></g>
 </g>
-<text class="out o0_0" x="26.0" y="80.0" textLength="306.0" lengthAdjust="spacing">os      : Arch Linux x86_64  (btw)</text>
-<text class="out o0_1" x="26.0" y="104.0" textLength="189.0" lengthAdjust="spacing">shell   : bash 5.2.37</text>
-<text class="out o0_2" x="26.0" y="128.0" textLength="270.0" lengthAdjust="spacing">lang    : Python, Shell, Batch</text>
-<text class="out o0_3" x="26.0" y="152.0" textLength="279.0" lengthAdjust="spacing">editor  : whichever opens first</text>
-<text class="out o0_4" x="26.0" y="176.0" textLength="288.0" lengthAdjust="spacing">wm      : i3 + too many keybinds</text>
-<text class="out o0_5" x="26.0" y="200.0" textLength="243.0" lengthAdjust="spacing">uptime  : 9999 days, 4 mins</text>
+<text class="out o0_0" x="30.0" y="88.0" textLength="346.8" lengthAdjust="spacing">os      : Arch Linux x86_64  (btw)</text>
+<text class="out o0_1" x="30.0" y="116.1" textLength="214.2" lengthAdjust="spacing">shell   : bash 5.2.37</text>
+<text class="out o0_2" x="30.0" y="144.1" textLength="306.0" lengthAdjust="spacing">lang    : Python, Shell, Batch</text>
+<text class="out o0_3" x="30.0" y="172.2" textLength="316.2" lengthAdjust="spacing">editor  : whichever opens first</text>
+<text class="out o0_4" x="30.0" y="200.2" textLength="326.4" lengthAdjust="spacing">wm      : i3 + too many keybinds</text>
+<text class="out o0_5" x="30.0" y="228.3" textLength="275.4" lengthAdjust="spacing">uptime  : 9999 days, 4 mins</text>
 <g class="ap1">
-<text class="dim" x="26.0" y="224.0" textLength="135.0" lengthAdjust="spacing">user@github:~$ </text>
-<g clip-path="url(#clip1)"><text class="cmd" x="161.0" y="224.0" textLength="189.0" lengthAdjust="spacing">grep -ri &quot;L4RP&quot; /etc/</text></g>
-<g class="cw1 cur"><g class="cm1"><rect class="blink" x="161.0" y="211.0" width="9.0" height="15.0"/></g></g>
+<text class="dim" x="30.0" y="256.3" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
+<g clip-path="url(#clip1)"><text class="cmd" x="183.0" y="256.3" textLength="214.2" lengthAdjust="spacing">grep -ri &quot;L4RP&quot; /etc/</text></g>
+<g class="cw1 cur"><g class="cm1"><rect class="blink" x="183.0" y="241.3" width="10.2" height="17.0"/></g></g>
 </g>
-<text class="out o1_0" x="26.0" y="248.0" textLength="162.0" lengthAdjust="spacing">/etc/hostname:L4RP</text>
-<text class="out o1_1" x="26.0" y="272.0" textLength="252.0" lengthAdjust="spacing">/etc/motd:welcome back, L4RP</text>
-<text class="out o1_2" x="26.0" y="296.0" textLength="360.0" lengthAdjust="spacing">/etc/shadow:permission denied (nice try)</text>
+<text class="out o1_0" x="30.0" y="284.4" textLength="183.6" lengthAdjust="spacing">/etc/hostname:L4RP</text>
+<text class="out o1_1" x="30.0" y="312.4" textLength="285.6" lengthAdjust="spacing">/etc/motd:welcome back, L4RP</text>
+<text class="out o1_2" x="30.0" y="340.5" textLength="408.0" lengthAdjust="spacing">/etc/shadow:permission denied (nice try)</text>
 <g class="fin">
-<text class="dim" x="26.0" y="320.0" textLength="135.0" lengthAdjust="spacing">user@github:~$ </text>
-<rect class="blink" x="161.0" y="307.0" width="9.0" height="15.0"/>
+<text class="dim" x="30.0" y="368.5" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
+<rect class="blink" x="183.0" y="353.5" width="10.2" height="17.0"/>
 </g>
 </svg>

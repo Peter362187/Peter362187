@@ -13,7 +13,7 @@
 -->
 
 <p align="center">
-  <img src="assets/header.svg" width="628"
+  <img src="assets/header.svg" width="713"
        alt="user@github:~$ whoami — L4RP. SYSTEM STATUS: ONLINE, OPSEC: ENABLED, GIT: CLEAN.">
 </p>
 
@@ -42,7 +42,7 @@ Linux into something you can hand to someone without a two-hour phone call.
 ## `$ ls -la ~/stack`
 
 <p align="center">
-  <img src="assets/stack.svg" width="628"
+  <img src="assets/stack.svg" width="713"
        alt="user@github:~$ neofetch — os: Arch Linux, shell: bash, lang: Python, Shell, Batch.">
 </p>
 
@@ -61,35 +61,36 @@ drwxr-xr-x  l4rp  git         branches are cheap, force-push is not
 
 ## `$ tail -f /var/log/*`
 
-<table>
-<tr>
-<td width="50%">
-  <img src="assets/services.svg" width="100%"
-       alt="systemctl status motivation — active (running).">
-</td>
-<td width="50%">
-  <img src="assets/build.svg" width="100%"
+<p align="center">
+  <img src="assets/services.svg" width="713"
+       alt="systemctl status motivation — active (running). systemctl status hypergamie. sudo rm -rf /doubt.">
+</p>
+
+<p align="center">
+  <img src="assets/build.svg" width="713"
        alt="./build-iso.sh — iso ready. git push origin main.">
-</td>
-</tr>
-<tr>
-<td width="50%">
-  <img src="assets/panic.svg" width="100%"
+</p>
+
+---
+
+## `$ journalctl -p err -b`
+
+<p align="center">
+  <img src="assets/panic.svg" width="713"
        alt="vim config.yaml, dann :q und :wq in der Shell, am Ende pkill vim und git push --force.">
-</td>
-<td width="50%">
-  <img src="assets/lonely.svg" width="100%"
+</p>
+
+<p align="center">
+  <img src="assets/lonely.svg" width="713"
        alt="neofetch girlfriend — not found, status 404. Danach apt install being-funny, das stattdessen jawline, filler und height-booster einrichtet; Personality: unchanged.">
-</td>
-</tr>
-</table>
+</p>
 
 ---
 
 ## `$ git log --stat`
 
 <p align="center">
-  <img src="assets/stats.svg" width="628"
+  <img src="assets/stats.svg" width="713"
        alt="Repo-, Follower- und Sprachstatistik als Terminal-Ausgabe.">
 </p>
 

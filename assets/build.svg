@@ -1,21 +1,21 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="628" height="316"
-     viewBox="0 0 628 316" role="img"
+<svg xmlns="http://www.w3.org/2000/svg" width="713" height="362"
+     viewBox="0 0 713 362" role="img"
      aria-label="l4rp@github: ~/easy-arch-linux - animiertes Terminal">
 <title>l4rp@github: ~/easy-arch-linux</title>
 <defs>
 <pattern id="scan" width="1" height="3" patternUnits="userSpaceOnUse">
   <rect width="1" height="1" fill="#ffffff" opacity="0.045"/>
 </pattern>
-<clipPath id="clip0"><rect class="tp0" x="161.0" y="41.0" width="288.0" height="24.0"/></clipPath>
-<clipPath id="clip1"><rect class="tp1" x="161.0" y="161.0" width="180.0" height="24.0"/></clipPath>
+<clipPath id="clip0"><rect class="tp0" x="183.0" y="43.0" width="326.4" height="28.0"/></clipPath>
+<clipPath id="clip1"><rect class="tp1" x="183.0" y="183.2" width="204.0" height="28.0"/></clipPath>
 </defs>
 <style>
-  text{font-family:ui-monospace,'DejaVu Sans Mono','Liberation Mono','Courier New',monospace;font-size:15.0px;
+  text{font-family:ui-monospace,'DejaVu Sans Mono','Liberation Mono','Courier New',monospace;font-size:17.0px;
     dominant-baseline:auto;white-space:pre}
   .cmd{fill:#f2f2f2}
   .out{fill:#a8a8a8}
   .dim{fill:#6f6f6f}
-  .ttl{fill:#7a7a7a;font-size:12px;letter-spacing:1px}
+  .ttl{fill:#7a7a7a;font-size:13px;letter-spacing:1px}
   .blink{fill:#f2f2f2;animation:bl 1.06s steps(1) infinite}
   @keyframes bl{0%,49%{opacity:1}50%,100%{opacity:0}}
   @media (prefers-reduced-motion:reduce){
@@ -25,11 +25,11 @@
   }
   @keyframes ap0{0%,8.304%{opacity:0}8.316%,100%{opacity:1}}
   .ap0{opacity:0;animation:ap0 8.43s linear 1 forwards}
-  @keyframes tp0{0%,8.304%{transform:translateX(-288.0px)}29.181%,100%{transform:translateX(0)}}
+  @keyframes tp0{0%,8.304%{transform:translateX(-326.4px)}29.181%,100%{transform:translateX(0)}}
   .tp0{animation:tp0 8.43s steps(32) 1 forwards}
   @keyframes cw0{0%,8.304%{opacity:0}8.316%,33.333%{opacity:1}33.345%,100%{opacity:0}}
   .cw0{opacity:0;animation:cw0 8.43s linear 1 forwards}
-  @keyframes cm0{0%,8.304%{transform:translateX(0)}29.181%,100%{transform:translateX(288.0px)}}
+  @keyframes cm0{0%,8.304%{transform:translateX(0)}29.181%,100%{transform:translateX(326.4px)}}
   .cm0{animation:cm0 8.43s steps(32) 1 forwards}
   @keyframes o0_0{0%,33.333%{opacity:0}33.345%,100%{opacity:1}}
   .o0_0{opacity:0;animation:o0_0 8.43s linear 1 forwards}
@@ -41,11 +41,11 @@
   .o0_3{opacity:0;animation:o0_3 8.43s linear 1 forwards}
   @keyframes ap1{0%,52.788%{opacity:0}52.800%,100%{opacity:1}}
   .ap1{opacity:0;animation:ap1 8.43s linear 1 forwards}
-  @keyframes tp1{0%,52.788%{transform:translateX(-180.0px)}65.836%,100%{transform:translateX(0)}}
+  @keyframes tp1{0%,52.788%{transform:translateX(-204.0px)}65.836%,100%{transform:translateX(0)}}
   .tp1{animation:tp1 8.43s steps(20) 1 forwards}
   @keyframes cw1{0%,52.788%{opacity:0}52.800%,69.988%{opacity:1}70.000%,100%{opacity:0}}
   .cw1{opacity:0;animation:cw1 8.43s linear 1 forwards}
-  @keyframes cm1{0%,52.788%{transform:translateX(0)}65.836%,100%{transform:translateX(180.0px)}}
+  @keyframes cm1{0%,52.788%{transform:translateX(0)}65.836%,100%{transform:translateX(204.0px)}}
   .cm1{animation:cm1 8.43s steps(20) 1 forwards}
   @keyframes o1_0{0%,69.988%{opacity:0}70.000%,100%{opacity:1}}
   .o1_0{opacity:0;animation:o1_0 8.43s linear 1 forwards}
@@ -56,33 +56,33 @@
   @keyframes fin{0%,88.138%{opacity:0}88.149%,100%{opacity:1}}
   .fin{opacity:0;animation:fin 8.43s linear 1 forwards}
 </style>
-<rect width="628" height="316" rx="7" fill="#000000"/>
-<rect x="0.5" y="0.5" width="627" height="315" rx="7"
+<rect width="713" height="362" rx="7" fill="#000000"/>
+<rect x="0.5" y="0.5" width="712" height="361" rx="7"
       fill="none" stroke="#303030"/>
-<rect x="1" y="34.0" width="626" height="281.0"
+<rect x="1" y="36.0" width="711" height="325.0"
       fill="url(#scan)"/>
-<line x1="1" y1="34.0" x2="627" y2="34.0" stroke="#262626"/>
-<rect x="18" y="14" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/><rect x="33" y="14" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/><rect x="48" y="14" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/>
-<text class="ttl" x="314.0" y="22" text-anchor="middle">l4rp@github: ~/easy-arch-linux</text>
+<line x1="1" y1="36.0" x2="712" y2="36.0" stroke="#262626"/>
+<rect x="20" y="15" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/><rect x="36" y="15" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/><rect x="52" y="15" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/>
+<text class="ttl" x="356.5" y="23" text-anchor="middle">l4rp@github: ~/easy-arch-linux</text>
 <g class="ap0">
-<text class="dim" x="26.0" y="56.0" textLength="135.0" lengthAdjust="spacing">user@github:~$ </text>
-<g clip-path="url(#clip0)"><text class="cmd" x="161.0" y="56.0" textLength="288.0" lengthAdjust="spacing">./build-iso.sh --profile desktop</text></g>
-<g class="cw0 cur"><g class="cm0"><rect class="blink" x="161.0" y="43.0" width="9.0" height="15.0"/></g></g>
+<text class="dim" x="30.0" y="60.0" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
+<g clip-path="url(#clip0)"><text class="cmd" x="183.0" y="60.0" textLength="326.4" lengthAdjust="spacing">./build-iso.sh --profile desktop</text></g>
+<g class="cw0 cur"><g class="cm0"><rect class="blink" x="183.0" y="45.0" width="10.2" height="17.0"/></g></g>
 </g>
-<text class="out o0_0" x="26.0" y="80.0" textLength="378.0" lengthAdjust="spacing">[*] resolving packages ................ ok</text>
-<text class="out o0_1" x="26.0" y="104.0" textLength="378.0" lengthAdjust="spacing">[*] building squashfs ................. ok</text>
-<text class="out o0_2" x="26.0" y="128.0" textLength="351.0" lengthAdjust="spacing">[################################] 100%</text>
-<text class="out o0_3" x="26.0" y="152.0" textLength="369.0" lengthAdjust="spacing">iso ready -&gt; easy-arch-2026.09-x86_64.iso</text>
+<text class="out o0_0" x="30.0" y="88.0" textLength="428.4" lengthAdjust="spacing">[*] resolving packages ................ ok</text>
+<text class="out o0_1" x="30.0" y="116.1" textLength="428.4" lengthAdjust="spacing">[*] building squashfs ................. ok</text>
+<text class="out o0_2" x="30.0" y="144.1" textLength="397.8" lengthAdjust="spacing">[################################] 100%</text>
+<text class="out o0_3" x="30.0" y="172.2" textLength="418.2" lengthAdjust="spacing">iso ready -&gt; easy-arch-2026.09-x86_64.iso</text>
 <g class="ap1">
-<text class="dim" x="26.0" y="176.0" textLength="135.0" lengthAdjust="spacing">user@github:~$ </text>
-<g clip-path="url(#clip1)"><text class="cmd" x="161.0" y="176.0" textLength="180.0" lengthAdjust="spacing">git push origin main</text></g>
-<g class="cw1 cur"><g class="cm1"><rect class="blink" x="161.0" y="163.0" width="9.0" height="15.0"/></g></g>
+<text class="dim" x="30.0" y="200.2" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
+<g clip-path="url(#clip1)"><text class="cmd" x="183.0" y="200.2" textLength="204.0" lengthAdjust="spacing">git push origin main</text></g>
+<g class="cw1 cur"><g class="cm1"><rect class="blink" x="183.0" y="185.2" width="10.2" height="17.0"/></g></g>
 </g>
-<text class="out o1_0" x="26.0" y="200.0" textLength="270.0" lengthAdjust="spacing">Enumerating objects: 42, done.</text>
-<text class="out o1_1" x="26.0" y="224.0" textLength="405.0" lengthAdjust="spacing">To github.com:Peter362187/Easy-Arch-Linux.git</text>
-<text class="out o1_2" x="26.0" y="248.0" textLength="297.0" lengthAdjust="spacing">   c0ffee1..deadbee  main -&gt; main</text>
+<text class="out o1_0" x="30.0" y="228.3" textLength="306.0" lengthAdjust="spacing">Enumerating objects: 42, done.</text>
+<text class="out o1_1" x="30.0" y="256.3" textLength="459.0" lengthAdjust="spacing">To github.com:Peter362187/Easy-Arch-Linux.git</text>
+<text class="out o1_2" x="30.0" y="284.4" textLength="336.6" lengthAdjust="spacing">   c0ffee1..deadbee  main -&gt; main</text>
 <g class="fin">
-<text class="dim" x="26.0" y="272.0" textLength="135.0" lengthAdjust="spacing">user@github:~$ </text>
-<rect class="blink" x="161.0" y="259.0" width="9.0" height="15.0"/>
+<text class="dim" x="30.0" y="312.4" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
+<rect class="blink" x="183.0" y="297.4" width="10.2" height="17.0"/>
 </g>
 </svg>

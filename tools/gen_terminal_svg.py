@@ -32,13 +32,14 @@ from dataclasses import dataclass, field
 
 # --- Geometrie -------------------------------------------------------------
 
-FONT_SIZE = 15.0
+FONT_SIZE = 17.0
 CHAR_W = FONT_SIZE * 0.6          # Monospace-Vorschub; per textLength erzwungen
-LINE_H = 24.0
-PAD_X = 26.0
-TITLEBAR_H = 34.0
-PAD_TOP = TITLEBAR_H + 22.0
-PAD_BOTTOM = 20.0
+LINE_H = FONT_SIZE * 1.65         # aus der Schriftgroesse abgeleitet, damit
+                                  # eine Aenderung oben alles mitzieht
+PAD_X = 30.0
+TITLEBAR_H = 36.0
+PAD_TOP = TITLEBAR_H + 24.0
+PAD_BOTTOM = 22.0
 
 FONT_STACK = ("ui-monospace,'DejaVu Sans Mono','Liberation Mono',"
               "'Courier New',monospace")
@@ -225,7 +226,7 @@ def build(scene: Scene) -> str:
 
     # ---- Rahmen ---------------------------------------------------------
     dots = "".join(
-        f'<rect x="{18 + k * 15}" y="14" width="7" height="7" '
+        f'<rect x="{20 + k * 16}" y="15" width="7" height="7" '
         f'fill="none" stroke="#4a4a4a" stroke-width="1"/>'
         for k in range(3)
     )
@@ -238,7 +239,7 @@ def build(scene: Scene) -> str:
   .cmd{{fill:#f2f2f2}}
   .out{{fill:#a8a8a8}}
   .dim{{fill:#6f6f6f}}
-  .ttl{{fill:#7a7a7a;font-size:12px;letter-spacing:1px}}
+  .ttl{{fill:#7a7a7a;font-size:13px;letter-spacing:1px}}
   .blink{{fill:#f2f2f2;animation:bl 1.06s steps(1) infinite}}
   @keyframes bl{{0%,49%{{opacity:1}}50%,100%{{opacity:0}}}}
   @media (prefers-reduced-motion:reduce){{
@@ -267,7 +268,7 @@ def build(scene: Scene) -> str:
       fill="url(#scan)"/>
 <line x1="1" y1="{TITLEBAR_H}" x2="{width - 1}" y2="{TITLEBAR_H}" stroke="#262626"/>
 {dots}
-<text class="ttl" x="{title_x}" y="{22}" text-anchor="middle">{title}</text>
+<text class="ttl" x="{title_x}" y="{23}" text-anchor="middle">{title}</text>
 {chr(10).join(body)}
 </svg>
 """
