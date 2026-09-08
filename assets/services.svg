@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="628" height="292"
+     viewBox="0 0 628 292" role="img"
+     aria-label="l4rp@github: ~/systemd - animiertes Terminal">
+<title>l4rp@github: ~/systemd</title>
+<defs>
+<pattern id="scan" width="1" height="3" patternUnits="userSpaceOnUse">
+  <rect width="1" height="1" fill="#ffffff" opacity="0.045"/>
+</pattern>
+<clipPath id="clip0"><rect class="tp0" x="161.0" y="41.0" width="243.0" height="24.0"/></clipPath>
+<clipPath id="clip1"><rect class="tp1" x="161.0" y="185.0" width="162.0" height="24.0"/></clipPath>
+</defs>
+<style>
+  text{font-family:ui-monospace,'DejaVu Sans Mono','Liberation Mono','Courier New',monospace;font-size:15.0px;
+    dominant-baseline:auto;white-space:pre}
+  .cmd{fill:#f2f2f2}
+  .out{fill:#a8a8a8}
+  .dim{fill:#6f6f6f}
+  .ttl{fill:#7a7a7a;font-size:12px;letter-spacing:1px}
+  .blink{fill:#f2f2f2;animation:bl 1.06s steps(1) infinite}
+  @keyframes bl{0%,49%{opacity:1}50%,100%{opacity:0}}
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important}
+    g,text{opacity:1!important}
+    .cur{opacity:0!important}
+  }
+  @keyframes ap0{0%,8.934%{opacity:0}8.947%,100%{opacity:1}}
+  .ap0{opacity:0;animation:ap0 7.83s linear 1 forwards}
+  @keyframes tp0{0%,8.934%{transform:translateX(-243.0px)}27.888%,100%{transform:translateX(0)}}
+  .tp0{animation:tp0 7.83s steps(27) 1 forwards}
+  @keyframes cw0{0%,8.934%{opacity:0}8.947%,32.355%{opacity:1}32.368%,100%{opacity:0}}
+  .cw0{opacity:0;animation:cw0 7.83s linear 1 forwards}
+  @keyframes cm0{0%,8.934%{transform:translateX(0)}27.888%,100%{transform:translateX(243.0px)}}
+  .cm0{animation:cm0 7.83s steps(27) 1 forwards}
+  @keyframes o0_0{0%,32.355%{opacity:0}32.368%,100%{opacity:1}}
+  .o0_0{opacity:0;animation:o0_0 7.83s linear 1 forwards}
+  @keyframes o0_1{0%,33.759%{opacity:0}33.772%,100%{opacity:1}}
+  .o0_1{opacity:0;animation:o0_1 7.83s linear 1 forwards}
+  @keyframes o0_2{0%,35.163%{opacity:0}35.175%,100%{opacity:1}}
+  .o0_2{opacity:0;animation:o0_2 7.83s linear 1 forwards}
+  @keyframes o0_3{0%,36.567%{opacity:0}36.579%,100%{opacity:1}}
+  .o0_3{opacity:0;animation:o0_3 7.83s linear 1 forwards}
+  @keyframes o0_4{0%,37.971%{opacity:0}37.983%,100%{opacity:1}}
+  .o0_4{opacity:0;animation:o0_4 7.83s linear 1 forwards}
+  @keyframes ap1{0%,54.690%{opacity:0}54.703%,100%{opacity:1}}
+  .ap1{opacity:0;animation:ap1 7.83s linear 1 forwards}
+  @keyframes tp1{0%,54.690%{transform:translateX(-162.0px)}67.326%,100%{transform:translateX(0)}}
+  .tp1{animation:tp1 7.83s steps(18) 1 forwards}
+  @keyframes cw1{0%,54.690%{opacity:0}54.703%,71.793%{opacity:1}71.806%,100%{opacity:0}}
+  .cw1{opacity:0;animation:cw1 7.83s linear 1 forwards}
+  @keyframes cm1{0%,54.690%{transform:translateX(0)}67.326%,100%{transform:translateX(162.0px)}}
+  .cm1{animation:cm1 7.83s steps(18) 1 forwards}
+  @keyframes o1_0{0%,71.793%{opacity:0}71.806%,100%{opacity:1}}
+  .o1_0{opacity:0;animation:o1_0 7.83s linear 1 forwards}
+  @keyframes fin{0%,87.237%{opacity:0}87.250%,100%{opacity:1}}
+  .fin{opacity:0;animation:fin 7.83s linear 1 forwards}
+</style>
+<rect width="628" height="292" rx="7" fill="#000000"/>
+<rect x="0.5" y="0.5" width="627" height="291" rx="7"
+      fill="none" stroke="#303030"/>
+<rect x="1" y="34.0" width="626" height="257.0"
+      fill="url(#scan)"/>
+<line x1="1" y1="34.0" x2="627" y2="34.0" stroke="#262626"/>
+<rect x="18" y="14" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/><rect x="33" y="14" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/><rect x="48" y="14" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/>
+<text class="ttl" x="314.0" y="22" text-anchor="middle">l4rp@github: ~/systemd</text>
+<g class="ap0">
+<text class="dim" x="26.0" y="56.0" textLength="135.0" lengthAdjust="spacing">user@github:~$ </text>
+<g clip-path="url(#clip0)"><text class="cmd" x="161.0" y="56.0" textLength="243.0" lengthAdjust="spacing">systemctl status motivation</text></g>
+<g class="cw0 cur"><g class="cm0"><rect class="blink" x="161.0" y="43.0" width="9.0" height="15.0"/></g></g>
+</g>
+<text class="out o0_0" x="26.0" y="80.0" textLength="360.0" lengthAdjust="spacing">* motivation.service - Motivation Daemon</text>
+<text class="out o0_1" x="26.0" y="104.0" textLength="540.0" lengthAdjust="spacing">     Loaded: loaded (/etc/systemd/system/motivation.service)</text>
+<text class="out o0_2" x="26.0" y="128.0" textLength="432.0" lengthAdjust="spacing">     Active: active (running) since Mon 04:12:07</text>
+<text class="out o0_3" x="26.0" y="152.0" textLength="270.0" lengthAdjust="spacing">   Main PID: 1337 (motivation)</text>
+<text class="out o0_4" x="26.0" y="176.0" textLength="297.0" lengthAdjust="spacing">     Memory: 2.1G (mostly coffee)</text>
+<g class="ap1">
+<text class="dim" x="26.0" y="200.0" textLength="135.0" lengthAdjust="spacing">user@github:~$ </text>
+<g clip-path="url(#clip1)"><text class="cmd" x="161.0" y="200.0" textLength="162.0" lengthAdjust="spacing">sudo rm -rf /doubt</text></g>
+<g class="cw1 cur"><g class="cm1"><rect class="blink" x="161.0" y="187.0" width="9.0" height="15.0"/></g></g>
+</g>
+<text class="out o1_0" x="26.0" y="224.0" textLength="459.0" lengthAdjust="spacing">rm: cannot remove '/doubt': Device or resource busy</text>
+<g class="fin">
+<text class="dim" x="26.0" y="248.0" textLength="135.0" lengthAdjust="spacing">user@github:~$ </text>
+<rect class="blink" x="161.0" y="235.0" width="9.0" height="15.0"/>
+</g>
+</svg>

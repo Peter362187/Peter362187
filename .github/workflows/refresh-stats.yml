@@ -1,0 +1,41 @@
+# Haelt assets/stats.svg aktuell. Nur First-Party-Actions, kein Drittanbieter.
+name: refresh-stats
+
+on:
+  schedule:
+    # Montags 04:17 UTC - versetzt, damit es nicht in die volle Stunde faellt,
+    # zu der GitHub die Scheduler-Last am staerksten drosselt.
+    - cron: "17 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Terminals und Stats neu erzeugen
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          python tools/gen_terminal_svg.py
+          python tools/gen_stats_svg.py
+
+      - name: Committen, falls sich etwas geaendert hat
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets
+          if git diff --staged --quiet; then
+            echo "Keine Aenderungen."
+          else
+            git commit -m "chore: Stats aktualisiert"
+            git push
+          fi
