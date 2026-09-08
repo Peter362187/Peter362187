@@ -1,13 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="713" height="362"
-     viewBox="0 0 713 362" role="img"
+<svg xmlns="http://www.w3.org/2000/svg" width="753" height="368"
+     viewBox="0 0 753 368" role="img"
      aria-label="l4rp@github: ~/stats - animiertes Terminal">
 <title>l4rp@github: ~/stats</title>
 <defs>
 <pattern id="scan" width="1" height="3" patternUnits="userSpaceOnUse">
   <rect width="1" height="1" fill="#ffffff" opacity="0.045"/>
 </pattern>
-<clipPath id="clip0"><rect class="tp0" x="183.0" y="43.0" width="244.8" height="28.0"/></clipPath>
-<clipPath id="clip1"><rect class="tp1" x="183.0" y="183.2" width="163.2" height="28.0"/></clipPath>
+<pattern id="grid" width="19" height="19" patternUnits="userSpaceOnUse">
+  <circle cx="1" cy="1" r="1" fill="#ffffff" opacity="0.07"/>
+</pattern>
+<radialGradient id="vig" cx="50%" cy="34%" r="78%">
+  <stop offset="0%" stop-color="#1b1b21"/>
+  <stop offset="100%" stop-color="#050506"/>
+</radialGradient>
+<filter id="shadow" x="-12%" y="-12%" width="124%" height="124%">
+  <feDropShadow dx="0" dy="5" stdDeviation="10"
+                flood-color="#000000" flood-opacity="0.85"/>
+</filter>
+<clipPath id="win">
+  <rect width="713" height="328" rx="8"/>
+</clipPath>
+<clipPath id="clip0"><rect class="tp0" x="183.0" y="43.0" width="244.8" height="24.6"/></clipPath>
+<clipPath id="clip1"><rect class="tp1" x="183.0" y="166.2" width="163.2" height="24.6"/></clipPath>
 </defs>
 <style>
   text{font-family:ui-monospace,'DejaVu Sans Mono','Liberation Mono','Courier New',monospace;font-size:17.0px;
@@ -56,33 +70,40 @@
   @keyframes fin{0%,86.790%{opacity:0}86.803%,100%{opacity:1}}
   .fin{opacity:0;animation:fin 7.57s linear 1 forwards}
 </style>
-<rect width="713" height="362" rx="7" fill="#000000"/>
-<rect x="0.5" y="0.5" width="712" height="361" rx="7"
-      fill="none" stroke="#303030"/>
-<rect x="1" y="36.0" width="711" height="325.0"
-      fill="url(#scan)"/>
-<line x1="1" y1="36.0" x2="712" y2="36.0" stroke="#262626"/>
-<rect x="20" y="15" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/><rect x="36" y="15" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/><rect x="52" y="15" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/>
-<text class="ttl" x="356.5" y="23" text-anchor="middle">l4rp@github: ~/stats</text>
+<rect width="753" height="368" rx="12" fill="url(#vig)"/>
+<rect width="753" height="368" rx="12" fill="url(#grid)"/>
+<g transform="translate(20,20)">
+  <rect width="713" height="328" rx="8" fill="#000000" filter="url(#shadow)"/>
+  <g clip-path="url(#win)">
+    <rect width="713" height="36.0" fill="#0e0e12"/>
+    <rect y="36.0" width="713" height="292.0"
+          fill="url(#scan)"/>
+  </g>
+  <line x1="1" y1="36.0" x2="712" y2="36.0" stroke="#2b2b32"/>
+  <rect x="20" y="15" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/><rect x="36" y="15" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/><rect x="52" y="15" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/>
+  <text class="ttl" x="356.5" y="23" text-anchor="middle">l4rp@github: ~/stats</text>
 <g class="ap0">
 <text class="dim" x="30.0" y="60.0" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
 <g clip-path="url(#clip0)"><text class="cmd" x="183.0" y="60.0" textLength="244.8" lengthAdjust="spacing">gh api users/l4rp --jq .</text></g>
 <g class="cw0 cur"><g class="cm0"><rect class="blink" x="183.0" y="45.0" width="10.2" height="17.0"/></g></g>
 </g>
-<text class="out o0_0" x="30.0" y="88.0" textLength="255.0" lengthAdjust="spacing">user        : Peter362187</text>
-<text class="out o0_1" x="30.0" y="116.1" textLength="244.8" lengthAdjust="spacing">member since: 2026-06-16</text>
-<text class="out o0_2" x="30.0" y="144.1" textLength="306.0" lengthAdjust="spacing">repos       : 2   followers: 0</text>
-<text class="out o0_3" x="30.0" y="172.2" textLength="265.2" lengthAdjust="spacing">stars       : 1   forks: 0</text>
+<text class="out o0_0" x="30.0" y="84.7" textLength="255.0" lengthAdjust="spacing">user        : Peter362187</text>
+<text class="out o0_1" x="30.0" y="109.3" textLength="244.8" lengthAdjust="spacing">member since: 2026-06-16</text>
+<text class="out o0_2" x="30.0" y="133.9" textLength="306.0" lengthAdjust="spacing">repos       : 2   followers: 1</text>
+<text class="out o0_3" x="30.0" y="158.6" textLength="265.2" lengthAdjust="spacing">stars       : 1   forks: 0</text>
 <g class="ap1">
-<text class="dim" x="30.0" y="200.2" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
-<g clip-path="url(#clip1)"><text class="cmd" x="183.0" y="200.2" textLength="163.2" lengthAdjust="spacing">cloc --by-lang .</text></g>
-<g class="cw1 cur"><g class="cm1"><rect class="blink" x="183.0" y="185.2" width="10.2" height="17.0"/></g></g>
+<text class="dim" x="30.0" y="183.2" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
+<g clip-path="url(#clip1)"><text class="cmd" x="183.0" y="183.2" textLength="163.2" lengthAdjust="spacing">cloc --by-lang .</text></g>
+<g class="cw1 cur"><g class="cm1"><rect class="blink" x="183.0" y="168.2" width="10.2" height="17.0"/></g></g>
 </g>
-<text class="out o1_0" x="30.0" y="228.3" textLength="540.6" lengthAdjust="spacing">Python     [####################]  99.5%  1 404 302 B</text>
-<text class="out o1_1" x="30.0" y="256.3" textLength="499.8" lengthAdjust="spacing">Shell      [#...................]   0.3%  4 182 B</text>
-<text class="out o1_2" x="30.0" y="284.4" textLength="499.8" lengthAdjust="spacing">Batchfile  [#...................]   0.2%  2 775 B</text>
+<text class="out o1_0" x="30.0" y="207.9" textLength="540.6" lengthAdjust="spacing">Python     [####################]  99.5%  1 404 436 B</text>
+<text class="out o1_1" x="30.0" y="232.5" textLength="499.8" lengthAdjust="spacing">Shell      [#...................]   0.3%  4 182 B</text>
+<text class="out o1_2" x="30.0" y="257.2" textLength="499.8" lengthAdjust="spacing">Batchfile  [#...................]   0.2%  2 775 B</text>
 <g class="fin">
-<text class="dim" x="30.0" y="312.4" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
-<rect class="blink" x="183.0" y="297.4" width="10.2" height="17.0"/>
+<text class="dim" x="30.0" y="281.9" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
+<rect class="blink" x="183.0" y="266.9" width="10.2" height="17.0"/>
+</g>
+  <rect x="0.5" y="0.5" width="712" height="327" rx="8"
+        fill="none" stroke="#33333a"/>
 </g>
 </svg>

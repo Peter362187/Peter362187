@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="753" height="442"
+     viewBox="0 0 753 442" role="img"
+     aria-label="l4rp@github: ~/pacman - animiertes Terminal">
+<title>l4rp@github: ~/pacman</title>
+<defs>
+<pattern id="scan" width="1" height="3" patternUnits="userSpaceOnUse">
+  <rect width="1" height="1" fill="#ffffff" opacity="0.045"/>
+</pattern>
+<pattern id="grid" width="19" height="19" patternUnits="userSpaceOnUse">
+  <circle cx="1" cy="1" r="1" fill="#ffffff" opacity="0.07"/>
+</pattern>
+<radialGradient id="vig" cx="50%" cy="34%" r="78%">
+  <stop offset="0%" stop-color="#1b1b21"/>
+  <stop offset="100%" stop-color="#050506"/>
+</radialGradient>
+<filter id="shadow" x="-12%" y="-12%" width="124%" height="124%">
+  <feDropShadow dx="0" dy="5" stdDeviation="10"
+                flood-color="#000000" flood-opacity="0.85"/>
+</filter>
+<clipPath id="win">
+  <rect width="713" height="402" rx="8"/>
+</clipPath>
+<clipPath id="clip0"><rect class="tp0" x="183.0" y="43.0" width="163.2" height="24.6"/></clipPath>
+<clipPath id="clip1"><rect class="tp1" x="183.0" y="289.5" width="81.6" height="24.6"/></clipPath>
+</defs>
+<style>
+  text{font-family:ui-monospace,'DejaVu Sans Mono','Liberation Mono','Courier New',monospace;font-size:17.0px;
+    dominant-baseline:auto;white-space:pre}
+  .cmd{fill:#f2f2f2}
+  .out{fill:#a8a8a8}
+  .dim{fill:#6f6f6f}
+  .ttl{fill:#7a7a7a;font-size:13px;letter-spacing:1px}
+  .blink{fill:#f2f2f2;animation:bl 1.06s steps(1) infinite}
+  @keyframes bl{0%,49%{opacity:1}50%,100%{opacity:0}}
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important}
+    g,text{opacity:1!important}
+    .cur{opacity:0!important}
+  }
+  @keyframes ap0{0%,9.434%{opacity:0}9.447%,100%{opacity:1}}
+  .ap0{opacity:0;animation:ap0 7.42s linear 1 forwards}
+  @keyframes tp0{0%,9.434%{transform:translateX(-163.2px)}21.294%,100%{transform:translateX(0)}}
+  .tp0{animation:tp0 7.42s steps(16) 1 forwards}
+  @keyframes cw0{0%,9.434%{opacity:0}9.447%,26.011%{opacity:1}26.024%,100%{opacity:0}}
+  .cw0{opacity:0;animation:cw0 7.42s linear 1 forwards}
+  @keyframes cm0{0%,9.434%{transform:translateX(0)}21.294%,100%{transform:translateX(163.2px)}}
+  .cm0{animation:cm0 7.42s steps(16) 1 forwards}
+  @keyframes o0_0{0%,26.011%{opacity:0}26.024%,100%{opacity:1}}
+  .o0_0{opacity:0;animation:o0_0 7.42s linear 1 forwards}
+  @keyframes o0_1{0%,27.493%{opacity:0}27.507%,100%{opacity:1}}
+  .o0_1{opacity:0;animation:o0_1 7.42s linear 1 forwards}
+  @keyframes o0_2{0%,28.976%{opacity:0}28.989%,100%{opacity:1}}
+  .o0_2{opacity:0;animation:o0_2 7.42s linear 1 forwards}
+  @keyframes o0_3{0%,30.458%{opacity:0}30.472%,100%{opacity:1}}
+  .o0_3{opacity:0;animation:o0_3 7.42s linear 1 forwards}
+  @keyframes o0_4{0%,31.941%{opacity:0}31.954%,100%{opacity:1}}
+  .o0_4{opacity:0;animation:o0_4 7.42s linear 1 forwards}
+  @keyframes o0_5{0%,33.423%{opacity:0}33.437%,100%{opacity:1}}
+  .o0_5{opacity:0;animation:o0_5 7.42s linear 1 forwards}
+  @keyframes o0_6{0%,34.906%{opacity:0}34.919%,100%{opacity:1}}
+  .o0_6{opacity:0;animation:o0_6 7.42s linear 1 forwards}
+  @keyframes o0_7{0%,36.388%{opacity:0}36.402%,100%{opacity:1}}
+  .o0_7{opacity:0;animation:o0_7 7.42s linear 1 forwards}
+  @keyframes o0_8{0%,37.871%{opacity:0}37.884%,100%{opacity:1}}
+  .o0_8{opacity:0;animation:o0_8 7.42s linear 1 forwards}
+  @keyframes ap1{0%,58.221%{opacity:0}58.235%,100%{opacity:1}}
+  .ap1{opacity:0;animation:ap1 7.42s linear 1 forwards}
+  @keyframes tp1{0%,58.221%{transform:translateX(-81.6px)}64.151%,100%{transform:translateX(0)}}
+  .tp1{animation:tp1 7.42s steps(8) 1 forwards}
+  @keyframes cw1{0%,58.221%{opacity:0}58.235%,68.868%{opacity:1}68.881%,100%{opacity:0}}
+  .cw1{opacity:0;animation:cw1 7.42s linear 1 forwards}
+  @keyframes cm1{0%,58.221%{transform:translateX(0)}64.151%,100%{transform:translateX(81.6px)}}
+  .cm1{animation:cm1 7.42s steps(8) 1 forwards}
+  @keyframes o1_0{0%,68.868%{opacity:0}68.881%,100%{opacity:1}}
+  .o1_0{opacity:0;animation:o1_0 7.42s linear 1 forwards}
+  @keyframes fin{0%,86.523%{opacity:0}86.536%,100%{opacity:1}}
+  .fin{opacity:0;animation:fin 7.42s linear 1 forwards}
+</style>
+<rect width="753" height="442" rx="12" fill="url(#vig)"/>
+<rect width="753" height="442" rx="12" fill="url(#grid)"/>
+<g transform="translate(20,20)">
+  <rect width="713" height="402" rx="8" fill="#000000" filter="url(#shadow)"/>
+  <g clip-path="url(#win)">
+    <rect width="713" height="36.0" fill="#0e0e12"/>
+    <rect y="36.0" width="713" height="366.0"
+          fill="url(#scan)"/>
+  </g>
+  <line x1="1" y1="36.0" x2="712" y2="36.0" stroke="#2b2b32"/>
+  <rect x="20" y="15" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/><rect x="36" y="15" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/><rect x="52" y="15" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/>
+  <text class="ttl" x="356.5" y="23" text-anchor="middle">l4rp@github: ~/pacman</text>
+<g class="ap0">
+<text class="dim" x="30.0" y="60.0" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
+<g clip-path="url(#clip0)"><text class="cmd" x="183.0" y="60.0" textLength="163.2" lengthAdjust="spacing">sudo pacman -Syu</text></g>
+<g class="cw0 cur"><g class="cm0"><rect class="blink" x="183.0" y="45.0" width="10.2" height="17.0"/></g></g>
+</g>
+<text class="out o0_0" x="30.0" y="84.7" textLength="377.4" lengthAdjust="spacing">:: Synchronising package databases...</text>
+<text class="out o0_1" x="30.0" y="109.3" textLength="561.0" lengthAdjust="spacing"> core            152.4 KiB  4.21 MiB/s 00:00 [###] 100%</text>
+<text class="out o0_2" x="30.0" y="133.9" textLength="561.0" lengthAdjust="spacing"> extra             8.3 MiB  9.04 MiB/s 00:01 [###] 100%</text>
+<text class="out o0_3" x="30.0" y="158.6" textLength="346.8" lengthAdjust="spacing">:: Starting full system upgrade...</text>
+<text class="out o0_4" x="30.0" y="183.2" textLength="255.0" lengthAdjust="spacing">resolving dependencies...</text>
+<text class="out o0_5" x="30.0" y="207.9" textLength="499.8" lengthAdjust="spacing">Packages (3) linux-6.11.5  python-3.13.1  vim-9.1</text>
+<text class="out o0_6" x="30.0" y="232.5" textLength="336.6" lengthAdjust="spacing">Total Installed Size:  412.08 MiB</text>
+<text class="out o0_7" x="30.0" y="257.2" textLength="377.4" lengthAdjust="spacing">:: Proceed with installation? [Y/n] y</text>
+<text class="out o0_8" x="30.0" y="281.9" textLength="489.6" lengthAdjust="spacing">(3/3) upgrading vim        [##############] 100%</text>
+<g class="ap1">
+<text class="dim" x="30.0" y="306.5" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
+<g clip-path="url(#clip1)"><text class="cmd" x="183.0" y="306.5" textLength="81.6" lengthAdjust="spacing">uname -r</text></g>
+<g class="cw1 cur"><g class="cm1"><rect class="blink" x="183.0" y="291.5" width="10.2" height="17.0"/></g></g>
+</g>
+<text class="out o1_0" x="30.0" y="331.1" textLength="142.8" lengthAdjust="spacing">6.11.5-arch1-1</text>
+<g class="fin">
+<text class="dim" x="30.0" y="355.8" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
+<rect class="blink" x="183.0" y="340.8" width="10.2" height="17.0"/>
+</g>
+  <rect x="0.5" y="0.5" width="712" height="401" rx="8"
+        fill="none" stroke="#33333a"/>
+</g>
+</svg>

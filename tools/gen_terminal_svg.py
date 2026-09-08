@@ -34,12 +34,17 @@ from dataclasses import dataclass, field
 
 FONT_SIZE = 17.0
 CHAR_W = FONT_SIZE * 0.6          # Monospace-Vorschub; per textLength erzwungen
-LINE_H = FONT_SIZE * 1.65         # aus der Schriftgroesse abgeleitet, damit
-                                  # eine Aenderung oben alles mitzieht
+LINE_H = FONT_SIZE * 1.45         # aus der Schriftgroesse abgeleitet, damit
+                                  # eine Aenderung oben alles mitzieht.
+                                  # 1.45 haelt das Zellverhaeltnis nahe an
+                                  # einem echten Terminal (~2.1) - bei mehr
+                                  # zerfaellt ASCII-Kunst in Einzelstriche.
 PAD_X = 30.0
 TITLEBAR_H = 36.0
 PAD_TOP = TITLEBAR_H + 24.0
 PAD_BOTTOM = 22.0
+MARGIN = 20.0                     # Rand um das Fenster, damit der Hintergrund
+                                  # (Punktraster + Vignette) sichtbar wird
 
 FONT_STACK = ("ui-monospace,'DejaVu Sans Mono','Liberation Mono',"
               "'Courier New',monospace")
@@ -249,27 +254,52 @@ def build(scene: Scene) -> str:
   }}
 """
 
-    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}"
-     viewBox="0 0 {width} {height}" role="img"
+    # Aussenmasse inklusive Rand; das Fenster selbst wird hineinverschoben.
+    ow = round(width + 2 * MARGIN)
+    oh = round(height + 2 * MARGIN)
+
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{ow}" height="{oh}"
+     viewBox="0 0 {ow} {oh}" role="img"
      aria-label="{title} - animiertes Terminal">
 <title>{title}</title>
 <defs>
 <pattern id="scan" width="1" height="3" patternUnits="userSpaceOnUse">
   <rect width="1" height="1" fill="#ffffff" opacity="0.045"/>
 </pattern>
+<pattern id="grid" width="19" height="19" patternUnits="userSpaceOnUse">
+  <circle cx="1" cy="1" r="1" fill="#ffffff" opacity="0.07"/>
+</pattern>
+<radialGradient id="vig" cx="50%" cy="34%" r="78%">
+  <stop offset="0%" stop-color="#1b1b21"/>
+  <stop offset="100%" stop-color="#050506"/>
+</radialGradient>
+<filter id="shadow" x="-12%" y="-12%" width="124%" height="124%">
+  <feDropShadow dx="0" dy="5" stdDeviation="10"
+                flood-color="#000000" flood-opacity="0.85"/>
+</filter>
+<clipPath id="win">
+  <rect width="{width}" height="{height}" rx="8"/>
+</clipPath>
 {chr(10).join(defs)}
 </defs>
 <style>{static_css}{chr(10).join('  ' + c for c in css)}
 </style>
-<rect width="{width}" height="{height}" rx="7" fill="#000000"/>
-<rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="7"
-      fill="none" stroke="#303030"/>
-<rect x="1" y="{TITLEBAR_H}" width="{width - 2}" height="{height - TITLEBAR_H - 1}"
-      fill="url(#scan)"/>
-<line x1="1" y1="{TITLEBAR_H}" x2="{width - 1}" y2="{TITLEBAR_H}" stroke="#262626"/>
-{dots}
-<text class="ttl" x="{title_x}" y="{23}" text-anchor="middle">{title}</text>
+<rect width="{ow}" height="{oh}" rx="12" fill="url(#vig)"/>
+<rect width="{ow}" height="{oh}" rx="12" fill="url(#grid)"/>
+<g transform="translate({MARGIN:.0f},{MARGIN:.0f})">
+  <rect width="{width}" height="{height}" rx="8" fill="#000000" filter="url(#shadow)"/>
+  <g clip-path="url(#win)">
+    <rect width="{width}" height="{TITLEBAR_H}" fill="#0e0e12"/>
+    <rect y="{TITLEBAR_H}" width="{width}" height="{height - TITLEBAR_H}"
+          fill="url(#scan)"/>
+  </g>
+  <line x1="1" y1="{TITLEBAR_H}" x2="{width - 1}" y2="{TITLEBAR_H}" stroke="#2b2b32"/>
+  {dots}
+  <text class="ttl" x="{title_x}" y="{23}" text-anchor="middle">{title}</text>
 {chr(10).join(body)}
+  <rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="8"
+        fill="none" stroke="#33333a"/>
+</g>
 </svg>
 """
 
@@ -301,14 +331,19 @@ SCENES = [
         cols=64,
         title="l4rp@github: ~/stack",
         steps=[
-            Step("neofetch --stdout", [
-                "os      : Arch Linux x86_64  (btw)",
-                "shell   : bash 5.2.37",
-                "lang    : Python, Shell, Batch",
-                "editor  : whichever opens first",
-                "wm      : i3 + too many keybinds",
-                "uptime  : 9999 days, 4 mins",
-            ], pause=1.3),
+            # Arch-Logo als ASCII, Infospalte ab Spalte 20.
+            # Raw-Strings, sonst liest Python "\ " als ungueltige
+            # Escape-Sequenz (heute nur eine Warnung, kuenftig ein Fehler).
+            Step("neofetch", [
+                r"       /\           l4rp@localhost",
+                r"      /  \          ---------------------------",
+                r"     /\   \         os     : Arch Linux x86_64",
+                r"    /      \        kernel : 6.11.5-arch1-1",
+                r"   /   ,,   \       shell  : bash 5.2.37",
+                r"  /   |  |  -\      lang   : Python, Shell, Batch",
+                r" /_-''    ''-_\     wm     : i3 + too many keybinds",
+                r"                    uptime : 9999 days, 4 mins",
+            ], pause=1.4),
             Step("grep -ri \"L4RP\" /etc/", [
                 "/etc/hostname:L4RP",
                 "/etc/motd:welcome back, L4RP",
@@ -338,43 +373,6 @@ SCENES = [
         ],
     ),
     Scene(
-        name="build",
-        cols=64,
-        title="l4rp@github: ~/easy-arch-linux",
-        steps=[
-            Step("./build-iso.sh --profile desktop", [
-                "[*] resolving packages ................ ok",
-                "[*] building squashfs ................. ok",
-                "[################################] 100%",
-                "iso ready -> easy-arch-2026.09-x86_64.iso",
-            ], pause=1.2),
-            Step("git push origin main", [
-                "Enumerating objects: 42, done.",
-                "To github.com:Peter362187/Easy-Arch-Linux.git",
-                "   c0ffee1..deadbee  main -> main",
-            ], pause=1.2),
-        ],
-    ),
-    Scene(
-        name="panic",
-        cols=64,
-        title="l4rp@github: ~/panic",
-        steps=[
-            # Erster Step ohne Ausgabe - vim startet einfach und danach
-            # landen die Editor-Kommandos in der Shell.
-            Step("vim config.yaml", [], pause=0.8),
-            Step(":q", ["bash: :q: command not found"], pause=0.5),
-            Step(":wq", ["bash: :wq: command not found"], pause=0.5),
-            Step("pkill vim", ["[1]+  Terminated  vim config.yaml"], pause=1.0),
-            Step("git commit -m \"fix\"", [
-                " 47 files changed, 3 insertions(+), 2891 deletions(-)",
-            ], pause=1.0),
-            Step("git push --force origin main", [
-                "remote: your teammates have been notified",
-            ], pause=1.2),
-        ],
-    ),
-    Scene(
         name="lonely",
         cols=64,
         title="l4rp@github: ~/lonely",
@@ -397,6 +395,45 @@ SCENES = [
                 "Setting up height-booster (5cm) ... done",
                 "Personality: unchanged. 0 upgraded, 3 newly installed.",
             ], pause=1.2),
+        ],
+    ),
+    Scene(
+        name="pacman",
+        cols=64,
+        title="l4rp@github: ~/pacman",
+        steps=[
+            Step("sudo pacman -Syu", [
+                ":: Synchronising package databases...",
+                " core            152.4 KiB  4.21 MiB/s 00:00 [###] 100%",
+                " extra             8.3 MiB  9.04 MiB/s 00:01 [###] 100%",
+                ":: Starting full system upgrade...",
+                "resolving dependencies...",
+                "Packages (3) linux-6.11.5  python-3.13.1  vim-9.1",
+                "Total Installed Size:  412.08 MiB",
+                ":: Proceed with installation? [Y/n] y",
+                "(3/3) upgrading vim        [##############] 100%",
+            ], pause=1.4),
+            Step("uname -r", ["6.11.5-arch1-1"], pause=1.2),
+        ],
+    ),
+    Scene(
+        name="wsl",
+        cols=64,
+        # Zeigt, dass das Projekt auch unter Windows laeuft - und ist
+        # gleichzeitig der Witz, Arch aus einer PowerShell heraus zu starten.
+        title="PS C:\\Users\\l4rp",
+        steps=[
+            Step("wsl --list --verbose", [
+                "  NAME            STATE           VERSION",
+                "* Arch            Running         2",
+                "  Ubuntu          Stopped         2",
+                "  docker-desktop  Stopped         2",
+            ], prompt="PS C:\\Users\\l4rp> ", pause=1.2),
+            Step("wsl -d Arch", [], prompt="PS C:\\Users\\l4rp> ", pause=0.7),
+            Step("head -1 /etc/os-release", ["NAME=\"Arch Linux\""], pause=1.0),
+            Step("echo \"windows was just the bootloader\"", [
+                "windows was just the bootloader",
+            ], pause=1.3),
         ],
     ),
 ]

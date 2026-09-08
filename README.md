@@ -13,7 +13,7 @@
 -->
 
 <p align="center">
-  <img src="assets/header.svg" width="713"
+  <img src="assets/header.svg" width="753"
        alt="user@github:~$ whoami — L4RP. SYSTEM STATUS: ONLINE, OPSEC: ENABLED, GIT: CLEAN.">
 </p>
 
@@ -42,7 +42,7 @@ Linux into something you can hand to someone without a two-hour phone call.
 ## `$ ls -la ~/stack`
 
 <p align="center">
-  <img src="assets/stack.svg" width="713"
+  <img src="assets/stack.svg" width="753"
        alt="user@github:~$ neofetch — os: Arch Linux, shell: bash, lang: Python, Shell, Batch.">
 </p>
 
@@ -62,27 +62,34 @@ drwxr-xr-x  l4rp  git         branches are cheap, force-push is not
 ## `$ tail -f /var/log/*`
 
 <p align="center">
-  <img src="assets/services.svg" width="713"
+  <img src="assets/services.svg" width="753"
        alt="systemctl status motivation — active (running). systemctl status hypergamie. sudo rm -rf /doubt.">
 </p>
 
 <p align="center">
-  <img src="assets/build.svg" width="713"
-       alt="./build-iso.sh — iso ready. git push origin main.">
+  <img src="assets/lonely.svg" width="753"
+       alt="neofetch girlfriend — not found, status 404. Danach apt install being-funny, das stattdessen jawline, filler und height-booster einrichtet; Personality: unchanged.">
 </p>
 
 ---
 
-## `$ journalctl -p err -b`
+## `$ sudo pacman -Syu`
 
 <p align="center">
-  <img src="assets/panic.svg" width="713"
-       alt="vim config.yaml, dann :q und :wq in der Shell, am Ende pkill vim und git push --force.">
+  <img src="assets/pacman.svg" width="753"
+       alt="sudo pacman -Syu — Datenbanken synchronisieren, drei Pakete aktualisieren, danach uname -r.">
 </p>
 
+---
+
+## `$ wsl --list --verbose`
+
+Das Projekt baut Arch-ISOs — auch von Windows aus. Die PowerShell ist
+dabei ehrlich gesagt nur der Bootloader.
+
 <p align="center">
-  <img src="assets/lonely.svg" width="713"
-       alt="neofetch girlfriend — not found, status 404. Danach apt install being-funny, das stattdessen jawline, filler und height-booster einrichtet; Personality: unchanged.">
+  <img src="assets/wsl.svg" width="753"
+       alt="PowerShell: wsl --list --verbose zeigt Arch als laufende Distribution, danach Wechsel nach Arch und echo 'windows was just the bootloader'.">
 </p>
 
 ---
@@ -90,7 +97,7 @@ drwxr-xr-x  l4rp  git         branches are cheap, force-push is not
 ## `$ git log --stat`
 
 <p align="center">
-  <img src="assets/stats.svg" width="713"
+  <img src="assets/stats.svg" width="753"
        alt="Repo-, Follower- und Sprachstatistik als Terminal-Ausgabe.">
 </p>
 
