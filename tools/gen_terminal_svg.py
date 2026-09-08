@@ -346,7 +346,7 @@ SCENES = [
             Step("neofetch", [
                 r"       /\           l4rp@localhost",
                 r"      /  \          ---------------------------",
-                r"     /\   \         os     : Arch Linux x86_64",
+                r"     /\   \         os     : Arsch Linus x86_64",
                 r"    /      \        kernel : 6.11.5-arch1-1",
                 r"   /   ,,   \       shell  : bash 5.2.37",
                 r"  /   |  |  -\      lang   : Python, Shell, Batch",
@@ -406,7 +406,7 @@ SCENES = [
     Scene(
         name="review",
         cols=64,
-        title="l4rp@github: ~/easy-arch-linux",
+        title="l4rp@github: ~/easy-arsch-linus",
         steps=[
             # Aufbau einer echten abgelehnten Push-Ausgabe: erst der
             # Upload, dann die Meldungen des Hooks mit "remote:"-Praefix,

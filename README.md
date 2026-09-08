@@ -29,7 +29,7 @@
 ```
 NAME     : L4RP
 ROLE     : builds things that boot
-DISTRO   : Arch Linux (yes, that is a personality trait)
+DISTRO   : Arsch Linus (yes, that is a personality trait)
 LANG     : Python, Shell, a regrettable amount of Batch
 DOING    : turning "just install Arch" into a wizard anyone can click
 DEBUG    : print statements, exclusively
@@ -48,7 +48,7 @@ Linux into something you can hand to someone without a two-hour phone call.
 
 <p align="center">
   <img src="assets/stack.svg" width="753"
-       alt="user@github:~$ neofetch — os: Arch Linux, shell: bash, lang: Python, Shell, Batch.">
+       alt="user@github:~$ neofetch — os: Arsch Linus, shell: bash, lang: Python, Shell, Batch.">
 </p>
 
 ```
