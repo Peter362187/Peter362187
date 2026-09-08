@@ -96,7 +96,7 @@
 <g clip-path="url(#clip1)"><text class="cmd" x="183.0" y="183.2" textLength="163.2" lengthAdjust="spacing">cloc --by-lang .</text></g>
 <g class="cw1 cur"><g class="cm1"><rect class="blink" x="183.0" y="168.2" width="10.2" height="17.0"/></g></g>
 </g>
-<text class="out o1_0" x="30.0" y="207.9" textLength="540.6" lengthAdjust="spacing">Python     [####################]  99.5%  1 404 436 B</text>
+<text class="out o1_0" x="30.0" y="207.9" textLength="540.6" lengthAdjust="spacing">Python     [####################]  99.5%  1 414 839 B</text>
 <text class="out o1_1" x="30.0" y="232.5" textLength="499.8" lengthAdjust="spacing">Shell      [#...................]   0.3%  4 182 B</text>
 <text class="out o1_2" x="30.0" y="257.2" textLength="499.8" lengthAdjust="spacing">Batchfile  [#...................]   0.2%  2 775 B</text>
 <g class="fin">

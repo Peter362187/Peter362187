@@ -87,19 +87,7 @@ drwxr-xr-x  l4rp  git         branches are cheap, force-push is not
 
 <img src="assets/divider.svg" width="753" alt="">
 
-## `// 05` uplink
-
-Das Projekt baut Arch-ISOs — auch von Windows aus. Die PowerShell ist
-dabei ehrlich gesagt nur der Bootloader.
-
-<p align="center">
-  <img src="assets/wsl.svg" width="753"
-       alt="PowerShell: wsl --list --verbose zeigt Arch als laufende Distribution, danach Wechsel nach Arch und echo 'windows was just the bootloader'.">
-</p>
-
-<img src="assets/divider.svg" width="753" alt="">
-
-## `// 06` telemetry
+## `// 05` telemetry
 
 <p align="center">
   <img src="assets/stats.svg" width="753"
@@ -111,155 +99,15 @@ ausfallen kann. Aktualisiert sich woechentlich per Action.</sub>
 
 <img src="assets/divider.svg" width="753" alt="">
 
-## `// 07` payloads
+## `// 06` payloads
 
-### [`Easy-Arch-Linux`](https://github.com/Peter362187/Easy-Arch-Linux)
+<p align="center">
+  <img src="assets/payloads.svg" width="753"
+       alt="gh repo list zeigt Easy-Arch-Linux (Python, 1 Stern); gh repo view zeigt Beschreibung, Topics und Adresse.">
+</p>
 
-```
-$ ./easy-arch --help
-
-  Graphical builder for custom Arch Linux live ISOs.
-  Click through a wizard — desktop, kernel, apps, network,
-  branding — and get a bootable ISO out the other end.
-
-  runs on   : Arch (native) · Windows (WSL) · Linux/macOS (container)
-  written in: Python · Shell · Batch
-  language  : German interface
-  status    : active
-```
-
-<img src="assets/divider.svg" width="753" alt="">
-
-## `// 08` classified
-
-<details>
-<summary><code>$ dmesg | tail</code></summary>
-
-```
-[    0.000000] Linux version 6.11.4-arch (l4rp@localhost)
-[    0.421337] ACPI: coffee subsystem initialised
-[    1.337000] systemd[1]: Reached target Mildly Productive.
-[    2.718281] opsec: module loaded, verbosity=0
-[    3.141592] usb 1-1: new device found, idVendor=dead, idProduct=beef
-[    4.000000] EXT4-fs (sda2): mounted filesystem with ordered data mode
-[    5.550000] hypergamie: module loaded, refcount=1, cannot unload
-[    8.675309] hypervisor: nested virtualisation detected, we must go deeper
-[   13.370000] motivation[1337]: segfault at 0900 ip 00007f caffeine not found
-[   21.000000] systemd[1]: motivation.service: scheduled restart
-[   42.000000] localhost: answer computed, question lost
-```
-
-</details>
-
-<details>
-<summary><code>$ sudo -l</code></summary>
-
-```
-User l4rp may run the following commands on localhost:
-
-    (ALL : ALL) NOPASSWD: /usr/bin/pacman -Syu
-    (ALL : ALL) NOPASSWD: /usr/bin/systemctl restart *
-    (ALL : ALL) NOPASSWD: /usr/local/bin/blame-the-cache
-    (root)      PASSWD:   /usr/bin/rm -rf /
-                          ^ this one asks twice. on purpose.
-```
-
-</details>
-
-<details>
-<summary><code>$ systemctl --failed</code></summary>
-
-```
-  UNIT                     LOAD   ACTIVE SUB    DESCRIPTION
-* confidence.service       loaded failed failed Confidence Daemon
-* sleep-schedule.service   loaded failed failed Sleep Schedule
-* documentation.timer      loaded failed failed Write The Docs
-* backup.service           loaded failed failed Backups (since 2024)
-
-4 loaded units listed.
-"it works on my machine" is not a valid unit type.
-```
-
-</details>
-
-<details>
-<summary><code>$ cat ~/.bash_history | sort | uniq -c | sort -rn | head</code></summary>
-
-```
-    482  ls
-    377  cd ..
-    291  clear
-    244  sudo !!
-    198  git status
-    161  sudo pacman -Syu
-    143  reboot
-     97  vim            (davon per pkill beendet: 61)
-     54  man man
-     12  sudo pacman -Rns $(pacman -Qtdq)
-              ^ fuehlte sich maechtig an. war es nicht.
-```
-
-</details>
-
-<details>
-<summary><code>$ history | grep -c "arch"</code></summary>
-
-```
-2847
-
-$ history | grep "why"
-  201  why is it not booting
-  388  why does grub hate me
-  512  why did that work
-  977  why did I touch it again
-```
-
-</details>
-
-<details>
-<summary><code>$ cat ~/.config/facts.toml</code></summary>
-
-<br>
-
-| key | value |
-| :-- | :-- |
-| `first_language` | a `.bat` file that opened Notepad. felt unstoppable. |
-| `tabs_or_spaces` | spaces. the linter won that argument years ago. |
-| `worst_bug` | a path with a space in it. on Windows. of course. |
-| `arch_installs` | more than the number of finished side projects |
-| `favourite_error` | `failed to commit transaction (conflicting files)` |
-| `deploy_target` | a USB stick and a lot of optimism |
-
-</details>
-
-<details>
-<summary><code>$ cat HOW_THIS_PAGE_WORKS.md</code></summary>
-
-<br>
-
-Kein Screenshot, kein GIF, kein externer Badge-Dienst.
-
-| Ebene | wie |
-| :-- | :-- |
-| Terminals, Banner, Trenner, Fusszeile | handgeschriebenes SVG, animiert mit CSS-`@keyframes`, im Repo selbst abgelegt |
-| Tipp-Effekt | eine Clip-Maske faehrt per `steps(n)` zeichenweise nach rechts — billiger, als den Text pro Zeichen neu zu setzen |
-| Schriftzug | Pixelraster aus `<rect>`, kein Text — sieht auf jedem Rechner gleich aus, egal welche Schrift installiert ist |
-| Statistik | echte Zahlen aus der GitHub-API, woechentlich per Action neu erzeugt |
-| Animationen | laufen genau einmal und halten den Endzustand — keine Dauerlast, und wer spaeter kommt, sieht das fertige Terminal |
-| Barrierefreiheit | jedes Panel hat `alt`-Text, und bei `prefers-reduced-motion` steht alles still |
-
-```console
-$ python tools/gen_terminal_svg.py    # Terminals
-$ python tools/gen_chrome_svg.py      # Banner, Trenner, Fusszeile
-$ python tools/gen_stats_svg.py       # Statistik aus der API
-```
-
-Warum ueberhaupt SVG? GitHub entfernt `<script>`, `<style>` und
-`style`-Attribute aus Markdown. Eine SVG-Datei, die per `<img>` eingebunden
-ist, ist dagegen ein eigenes Dokument — die CSS-Keyframes darin laufen ganz
-normal. Das ist der einzige Weg zu echten Animationen ohne fremden Dienst.
-
-</details>
+<sub>Aus der GitHub-API erzeugt — die Liste bleibt aktuell, ohne dass ich
+sie hier von Hand nachpflege.</sub>
 
 <img src="assets/divider.svg" width="753" alt="">
 

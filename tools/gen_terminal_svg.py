@@ -427,26 +427,6 @@ SCENES = [
             ], pause=1.3),
         ],
     ),
-    Scene(
-        name="wsl",
-        cols=64,
-        # Zeigt, dass das Projekt auch unter Windows laeuft - und ist
-        # gleichzeitig der Witz, Arch aus einer PowerShell heraus zu starten.
-        title="PS C:\\Users\\l4rp",
-        steps=[
-            Step("wsl --list --verbose", [
-                "  NAME            STATE           VERSION",
-                "* Arch            Running         2",
-                "  Ubuntu          Stopped         2",
-                "  docker-desktop  Stopped         2",
-            ], prompt="PS C:\\Users\\l4rp> ", pause=1.2),
-            Step("wsl -d Arch", [], prompt="PS C:\\Users\\l4rp> ", pause=0.7),
-            Step("head -1 /etc/os-release", ["NAME=\"Arch Linux\""], pause=1.0),
-            Step("echo \"windows was just the bootloader\"", [
-                "windows was just the bootloader",
-            ], pause=1.3),
-        ],
-    ),
 ]
 
 

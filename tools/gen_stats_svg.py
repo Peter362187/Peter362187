@@ -19,6 +19,7 @@ from __future__ import annotations
 import json
 import os
 import sys
+import textwrap
 import urllib.error
 import urllib.request
 
@@ -82,34 +83,84 @@ def collect() -> tuple[list[str], list[str]]:
     return account, langs
 
 
+def repo_lines() -> tuple[list[str], list[str]]:
+    """Ausgabe fuer das Projekt-Panel, im Stil von `gh repo list/view`."""
+    # Das Profil-Repo heisst wie der Benutzer und enthaelt nur dieses
+    # README - es ist kein Projekt und gehoert nicht in die Liste.
+    repos = [r for r in api(f"/users/{USER}/repos?per_page=100&sort=updated")
+             if not r["fork"] and r["name"].lower() != USER.lower()]
+
+    listing = [f"{'NAME':<22}{'LANG':<10}{'STARS':>6}  {'UPDATED':<10}"]
+    for r in repos[:6]:
+        listing.append(
+            f"{r['name'][:21]:<22}{(r['language'] or '-')[:9]:<10}"
+            f"{r['stargazers_count']:>6}  {r['updated_at'][:10]:<10}"
+        )
+
+    detail: list[str] = []
+    if repos:
+        top = max(repos, key=lambda r: (r["stargazers_count"], r["updated_at"]))
+        detail.append(f"{USER}/{top['name']}")
+        desc = (top.get("description") or "").replace("—", "-")
+        # Breite 56: plus 2 Zeichen Einzug und " ..." bleibt die Zeile
+        # unter den 64 Spalten des Panels.
+        wrapped = textwrap.wrap(desc, width=56)
+        # Lieber sichtbar kuerzen als mitten im Satz abschneiden.
+        if len(wrapped) > 3:
+            wrapped = wrapped[:3]
+            wrapped[-1] = wrapped[-1].rstrip(" ,.;:") + " ..."
+        for line in wrapped:
+            detail.append(f"  {line}")
+        topics = " ".join(top.get("topics") or [])
+        if topics:
+            for i, line in enumerate(textwrap.wrap(topics, width=52)[:2]):
+                detail.append(f"  {'topics:' if i == 0 else '       '} {line}")
+        detail.append(f"  homepage: github.com/{USER}/{top['name']}")
+    return listing, detail
+
+
 def main() -> None:
-    out = os.path.join(
-        os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
-        "assets", "stats.svg")
+    root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    out_stats = os.path.join(root, "assets", "stats.svg")
+    out_repos = os.path.join(root, "assets", "payloads.svg")
     try:
         account, langs = collect()
+        listing, detail = repo_lines()
     except (urllib.error.URLError, urllib.error.HTTPError, TimeoutError) as exc:
-        if os.path.exists(out):
+        if os.path.exists(out_stats) and os.path.exists(out_repos):
             print(f"GitHub-API nicht erreichbar ({exc}) - bestehende "
-                  f"stats.svg bleibt unveraendert.", file=sys.stderr)
+                  f"Dateien bleiben unveraendert.", file=sys.stderr)
             return
-        print(f"GitHub-API nicht erreichbar ({exc}) und keine vorhandene "
-              f"stats.svg - Abbruch.", file=sys.stderr)
+        print(f"GitHub-API nicht erreichbar ({exc}) und keine vorhandenen "
+              f"Dateien - Abbruch.", file=sys.stderr)
         raise SystemExit(1)
 
-    scene = Scene(
-        name="stats",
-        title=f"l4rp@github: ~/stats",
-        cols=64,
-        steps=[
-            Step("gh api users/l4rp --jq .", account, pause=1.0),
-            Step("cloc --by-lang .", langs, pause=1.2),
-        ],
-    )
-    os.makedirs(os.path.dirname(out), exist_ok=True)
-    with open(out, "w", encoding="utf-8", newline="\n") as fh:
-        fh.write(build(scene))
-    print(f"{out}  ({os.path.getsize(out)} bytes)")
+    scenes = [
+        (out_stats, Scene(
+            name="stats",
+            title="l4rp@github: ~/stats",
+            cols=64,
+            steps=[
+                Step("gh api users/l4rp --jq .", account, pause=1.0),
+                Step("cloc --by-lang .", langs, pause=1.2),
+            ],
+        )),
+        (out_repos, Scene(
+            name="payloads",
+            title="l4rp@github: ~/payloads",
+            cols=64,
+            steps=[
+                Step("gh repo list", listing, pause=1.2),
+                Step("gh repo view --json name,description,topics",
+                     detail, pause=1.4),
+            ],
+        )),
+    ]
+    os.makedirs(os.path.join(root, "assets"), exist_ok=True)
+    for path, scene in scenes:
+        with open(path, "w", encoding="utf-8", newline="\n") as fh:
+            fh.write(build(scene))
+        print(f"{path}  ({os.path.getsize(path)} bytes)")
 
 
 if __name__ == "__main__":

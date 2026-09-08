@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="753" height="418"
+     viewBox="0 0 753 418" role="img"
+     aria-label="l4rp@github: ~/payloads - animiertes Terminal">
+<title>l4rp@github: ~/payloads</title>
+<defs>
+<pattern id="scan" width="1" height="3" patternUnits="userSpaceOnUse">
+  <rect width="1" height="1" fill="#ffffff" opacity="0.045"/>
+</pattern>
+<pattern id="grid" width="19" height="19" patternUnits="userSpaceOnUse">
+  <circle cx="1" cy="1" r="1" fill="#ffffff" opacity="0.07"/>
+</pattern>
+<radialGradient id="vig" cx="50%" cy="34%" r="78%">
+  <stop offset="0%" stop-color="#1b1b21"/>
+  <stop offset="100%" stop-color="#050506"/>
+</radialGradient>
+<filter id="shadow" x="-12%" y="-12%" width="124%" height="124%">
+  <feDropShadow dx="0" dy="5" stdDeviation="10"
+                flood-color="#000000" flood-opacity="0.85"/>
+</filter>
+<clipPath id="win">
+  <rect width="713" height="378" rx="8"/>
+</clipPath>
+<clipPath id="clip0"><rect class="tp0" x="183.0" y="43.0" width="122.4" height="24.6"/></clipPath>
+<clipPath id="clip1"><rect class="tp1" x="183.0" y="116.9" width="438.6" height="24.6"/></clipPath>
+</defs>
+<style>
+  text{font-family:ui-monospace,'DejaVu Sans Mono','Liberation Mono','Courier New',monospace;font-size:17.0px;
+    dominant-baseline:auto;white-space:pre}
+  .cmd{fill:#f2f2f2}
+  .out{fill:#a8a8a8}
+  .dim{fill:#6f6f6f}
+  .ttl{fill:#7a7a7a;font-size:13px;letter-spacing:1px}
+  .blink{fill:#f2f2f2;animation:bl 1.06s steps(1) infinite}
+  @keyframes bl{0%,49%{opacity:1}50%,100%{opacity:0}}
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important}
+    g,text{opacity:1!important}
+    .cur{opacity:0!important}
+  }
+  @keyframes ap0{0%,7.765%{opacity:0}7.776%,100%{opacity:1}}
+  .ap0{opacity:0;animation:ap0 9.02s linear 1 forwards}
+  @keyframes tp0{0%,7.765%{transform:translateX(-122.4px)}15.086%,100%{transform:translateX(0)}}
+  .tp0{animation:tp0 9.02s steps(12) 1 forwards}
+  @keyframes cw0{0%,7.765%{opacity:0}7.776%,18.968%{opacity:1}18.979%,100%{opacity:0}}
+  .cw0{opacity:0;animation:cw0 9.02s linear 1 forwards}
+  @keyframes cm0{0%,7.765%{transform:translateX(0)}15.086%,100%{transform:translateX(122.4px)}}
+  .cm0{animation:cm0 9.02s steps(12) 1 forwards}
+  @keyframes o0_0{0%,18.968%{opacity:0}18.979%,100%{opacity:1}}
+  .o0_0{opacity:0;animation:o0_0 9.02s linear 1 forwards}
+  @keyframes o0_1{0%,20.189%{opacity:0}20.200%,100%{opacity:1}}
+  .o0_1{opacity:0;animation:o0_1 9.02s linear 1 forwards}
+  @keyframes ap1{0%,34.720%{opacity:0}34.731%,100%{opacity:1}}
+  .ap1{opacity:0;animation:ap1 9.02s linear 1 forwards}
+  @keyframes tp1{0%,34.720%{transform:translateX(-438.6px)}60.954%,100%{transform:translateX(0)}}
+  .tp1{animation:tp1 9.02s steps(43) 1 forwards}
+  @keyframes cw1{0%,34.720%{opacity:0}34.731%,64.836%{opacity:1}64.847%,100%{opacity:0}}
+  .cw1{opacity:0;animation:cw1 9.02s linear 1 forwards}
+  @keyframes cm1{0%,34.720%{transform:translateX(0)}60.954%,100%{transform:translateX(438.6px)}}
+  .cm1{animation:cm1 9.02s steps(43) 1 forwards}
+  @keyframes o1_0{0%,64.836%{opacity:0}64.847%,100%{opacity:1}}
+  .o1_0{opacity:0;animation:o1_0 9.02s linear 1 forwards}
+  @keyframes o1_1{0%,66.057%{opacity:0}66.068%,100%{opacity:1}}
+  .o1_1{opacity:0;animation:o1_1 9.02s linear 1 forwards}
+  @keyframes o1_2{0%,67.277%{opacity:0}67.288%,100%{opacity:1}}
+  .o1_2{opacity:0;animation:o1_2 9.02s linear 1 forwards}
+  @keyframes o1_3{0%,68.497%{opacity:0}68.508%,100%{opacity:1}}
+  .o1_3{opacity:0;animation:o1_3 9.02s linear 1 forwards}
+  @keyframes o1_4{0%,69.717%{opacity:0}69.728%,100%{opacity:1}}
+  .o1_4{opacity:0;animation:o1_4 9.02s linear 1 forwards}
+  @keyframes o1_5{0%,70.937%{opacity:0}70.948%,100%{opacity:1}}
+  .o1_5{opacity:0;animation:o1_5 9.02s linear 1 forwards}
+  @keyframes o1_6{0%,72.158%{opacity:0}72.169%,100%{opacity:1}}
+  .o1_6{opacity:0;animation:o1_6 9.02s linear 1 forwards}
+  @keyframes fin{0%,88.907%{opacity:0}88.918%,100%{opacity:1}}
+  .fin{opacity:0;animation:fin 9.02s linear 1 forwards}
+</style>
+<rect width="753" height="418" rx="12" fill="url(#vig)"/>
+<rect width="753" height="418" rx="12" fill="url(#grid)"/>
+<g transform="translate(20,20)">
+  <rect width="713" height="378" rx="8" fill="#000000" filter="url(#shadow)"/>
+  <g clip-path="url(#win)">
+    <rect width="713" height="36.0" fill="#0e0e12"/>
+    <rect y="36.0" width="713" height="342.0"
+          fill="url(#scan)"/>
+  </g>
+  <line x1="1" y1="36.0" x2="712" y2="36.0" stroke="#2b2b32"/>
+  <rect x="20" y="15" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/><rect x="36" y="15" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/><rect x="52" y="15" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/>
+  <text class="ttl" x="356.5" y="23" text-anchor="middle">l4rp@github: ~/payloads</text>
+<g class="ap0">
+<text class="dim" x="30.0" y="60.0" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
+<g clip-path="url(#clip0)"><text class="cmd" x="183.0" y="60.0" textLength="122.4" lengthAdjust="spacing">gh repo list</text></g>
+<g class="cw0 cur"><g class="cm0"><rect class="blink" x="183.0" y="45.0" width="10.2" height="17.0"/></g></g>
+</g>
+<text class="out o0_0" x="30.0" y="84.7" textLength="510.0" lengthAdjust="spacing">NAME                  LANG       STARS  UPDATED   </text>
+<text class="out o0_1" x="30.0" y="109.3" textLength="510.0" lengthAdjust="spacing">Easy-Arch-Linux       Python         1  2026-09-08</text>
+<g class="ap1">
+<text class="dim" x="30.0" y="133.9" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
+<g clip-path="url(#clip1)"><text class="cmd" x="183.0" y="133.9" textLength="438.6" lengthAdjust="spacing">gh repo view --json name,description,topics</text></g>
+<g class="cw1 cur"><g class="cm1"><rect class="blink" x="183.0" y="118.9" width="10.2" height="17.0"/></g></g>
+</g>
+<text class="out o1_0" x="30.0" y="158.6" textLength="275.4" lengthAdjust="spacing">Peter362187/Easy-Arch-Linux</text>
+<text class="out o1_1" x="30.0" y="183.2" textLength="591.6" lengthAdjust="spacing">  Graphical builder for custom Arch Linux based live ISOs.</text>
+<text class="out o1_2" x="30.0" y="207.9" textLength="591.6" lengthAdjust="spacing">  Click through a wizard - desktop, kernel, apps, network,</text>
+<text class="out o1_3" x="30.0" y="232.5" textLength="540.6" lengthAdjust="spacing">  branding - and get a bootable ISO. Runs on Arch ...</text>
+<text class="out o1_4" x="30.0" y="257.2" textLength="571.2" lengthAdjust="spacing">  topics: archlinux claude-code linux linux-custom-image</text>
+<text class="out o1_5" x="30.0" y="281.9" textLength="499.8" lengthAdjust="spacing">          linux-desktop linux-distribution python</text>
+<text class="out o1_6" x="30.0" y="306.5" textLength="510.0" lengthAdjust="spacing">  homepage: github.com/Peter362187/Easy-Arch-Linux</text>
+<g class="fin">
+<text class="dim" x="30.0" y="331.1" textLength="153.0" lengthAdjust="spacing">user@github:~$ </text>
+<rect class="blink" x="183.0" y="316.1" width="10.2" height="17.0"/>
+</g>
+  <rect x="0.5" y="0.5" width="712" height="377" rx="8"
+        fill="none" stroke="#33333a"/>
+</g>
+</svg>
