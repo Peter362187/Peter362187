@@ -78,7 +78,16 @@ drwxr-xr-x  l4rp  git         branches are cheap, force-push is not
 
 <img src="assets/divider.svg" width="753" alt="">
 
-## `// 04` uplink
+## `// 04` review
+
+<p align="center">
+  <img src="assets/review.svg" width="753"
+       alt="git push origin main - der pre-receive hook lehnt ab, verdict: the code is ass, suggestion: start over. Auch git push --force wird abgelehnt.">
+</p>
+
+<img src="assets/divider.svg" width="753" alt="">
+
+## `// 05` uplink
 
 Das Projekt baut Arch-ISOs — auch von Windows aus. Die PowerShell ist
 dabei ehrlich gesagt nur der Bootloader.
@@ -90,7 +99,7 @@ dabei ehrlich gesagt nur der Bootloader.
 
 <img src="assets/divider.svg" width="753" alt="">
 
-## `// 05` telemetry
+## `// 06` telemetry
 
 <p align="center">
   <img src="assets/stats.svg" width="753"
@@ -102,7 +111,7 @@ ausfallen kann. Aktualisiert sich woechentlich per Action.</sub>
 
 <img src="assets/divider.svg" width="753" alt="">
 
-## `// 06` payloads
+## `// 07` payloads
 
 ### [`Easy-Arch-Linux`](https://github.com/Peter362187/Easy-Arch-Linux)
 
@@ -121,7 +130,7 @@ $ ./easy-arch --help
 
 <img src="assets/divider.svg" width="753" alt="">
 
-## `// 07` classified
+## `// 08` classified
 
 <details>
 <summary><code>$ dmesg | tail</code></summary>

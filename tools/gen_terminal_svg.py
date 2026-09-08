@@ -404,6 +404,32 @@ SCENES = [
         ],
     ),
     Scene(
+        name="review",
+        cols=64,
+        title="l4rp@github: ~/easy-arch-linux",
+        steps=[
+            # Aufbau einer echten abgelehnten Push-Ausgabe: erst der
+            # Upload, dann die Meldungen des Hooks mit "remote:"-Praefix,
+            # dann die Ref-Zeile und der Fehler. Genau in der Reihenfolge
+            # kennt man das von Git.
+            Step("git push origin main", [
+                "Enumerating objects: 47, done.",
+                "Writing objects: 100% (31/31), 4.21 KiB, done.",
+                "remote: error: pre-receive hook declined",
+                "remote:",
+                "remote:   verdict ......... the code is ass",
+                "remote:   suggestion ...... start over",
+                "remote:",
+                "To github.com:Peter362187/Easy-Arch-Linux.git",
+                " ! [remote rejected] main -> main (hook declined)",
+                "error: failed to push some refs",
+            ], pause=1.5),
+            Step("git push --force origin main", [
+                "remote: error: no.",
+            ], pause=1.3),
+        ],
+    ),
+    Scene(
         name="wsl",
         cols=64,
         # Zeigt, dass das Projekt auch unter Windows laeuft - und ist
