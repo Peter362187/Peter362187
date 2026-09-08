@@ -27,6 +27,8 @@ ROLE     : builds things that boot
 DISTRO   : Arch Linux (yes, that is a personality trait)
 LANG     : Python, Shell, a regrettable amount of Batch
 DOING    : turning "just install Arch" into a wizard anyone can click
+DEBUG    : print statements, exclusively
+TESTING  : ship it, the users will find them
 STATUS   : it compiled, therefore it works
 CONTACT  : open an issue, that is what they are for
 ```
@@ -50,6 +52,8 @@ drwxr-xr-x  l4rp  bash        glue, installers, anything with a shebang
 drwxr-xr-x  l4rp  linux       arch, systemd, squashfs, mkinitcpio
 drwxr-xr-x  l4rp  windows     WSL bridges, batch launchers, PowerShell
 drwxr-xr-x  l4rp  git         branches are cheap, force-push is not
+-rwxr-xr-x  l4rp  stackover~  copy-paste, attribution optional
+-rw-r--r--  l4rp  docs        planned. always planned.
 -rw-------  root  opsec       permission denied
 ```
 
@@ -66,6 +70,16 @@ drwxr-xr-x  l4rp  git         branches are cheap, force-push is not
 <td width="50%">
   <img src="assets/build.svg" width="100%"
        alt="./build-iso.sh — iso ready. git push origin main.">
+</td>
+</tr>
+<tr>
+<td width="50%">
+  <img src="assets/panic.svg" width="100%"
+       alt="vim config.yaml, dann :q und :wq in der Shell, am Ende pkill vim und git push --force.">
+</td>
+<td width="50%">
+  <img src="assets/lonely.svg" width="100%"
+       alt="neofetch girlfriend — not found, status 404, hint: apt install shower.">
 </td>
 </tr>
 </table>
@@ -135,6 +149,41 @@ User l4rp may run the following commands on localhost:
     (ALL : ALL) NOPASSWD: /usr/local/bin/blame-the-cache
     (root)      PASSWD:   /usr/bin/rm -rf /
                           ^ this one asks twice. on purpose.
+```
+
+</details>
+
+<details>
+<summary><code>$ systemctl --failed</code></summary>
+
+```
+  UNIT                     LOAD   ACTIVE SUB    DESCRIPTION
+* confidence.service       loaded failed failed Confidence Daemon
+* sleep-schedule.service   loaded failed failed Sleep Schedule
+* documentation.timer      loaded failed failed Write The Docs
+* backup.service           loaded failed failed Backups (since 2024)
+
+4 loaded units listed.
+"it works on my machine" is not a valid unit type.
+```
+
+</details>
+
+<details>
+<summary><code>$ cat ~/.bash_history | sort | uniq -c | sort -rn | head</code></summary>
+
+```
+    482  ls
+    377  cd ..
+    291  clear
+    244  sudo !!
+    198  git status
+    161  sudo pacman -Syu
+    143  reboot
+     97  vim            (davon per pkill beendet: 61)
+     54  man man
+     12  sudo pacman -Rns $(pacman -Qtdq)
+              ^ fuehlte sich maechtig an. war es nicht.
 ```
 
 </details>

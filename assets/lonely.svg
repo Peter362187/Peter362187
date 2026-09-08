@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="628" height="316"
+     viewBox="0 0 628 316" role="img"
+     aria-label="l4rp@github: ~/lonely - animiertes Terminal">
+<title>l4rp@github: ~/lonely</title>
+<defs>
+<pattern id="scan" width="1" height="3" patternUnits="userSpaceOnUse">
+  <rect width="1" height="1" fill="#ffffff" opacity="0.045"/>
+</pattern>
+<clipPath id="clip0"><rect class="tp0" x="161.0" y="41.0" width="171.0" height="24.0"/></clipPath>
+<clipPath id="clip1"><rect class="tp1" x="161.0" y="185.0" width="243.0" height="24.0"/></clipPath>
+</defs>
+<style>
+  text{font-family:ui-monospace,'DejaVu Sans Mono','Liberation Mono','Courier New',monospace;font-size:15.0px;
+    dominant-baseline:auto;white-space:pre}
+  .cmd{fill:#f2f2f2}
+  .out{fill:#a8a8a8}
+  .dim{fill:#6f6f6f}
+  .ttl{fill:#7a7a7a;font-size:12px;letter-spacing:1px}
+  .blink{fill:#f2f2f2;animation:bl 1.06s steps(1) infinite}
+  @keyframes bl{0%,49%{opacity:1}50%,100%{opacity:0}}
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important}
+    g,text{opacity:1!important}
+    .cur{opacity:0!important}
+  }
+  @keyframes ap0{0%,8.537%{opacity:0}8.549%,100%{opacity:1}}
+  .ap0{opacity:0;animation:ap0 8.20s linear 1 forwards}
+  @keyframes tp0{0%,8.537%{transform:translateX(-171.0px)}21.280%,100%{transform:translateX(0)}}
+  .tp0{animation:tp0 8.20s steps(19) 1 forwards}
+  @keyframes cw0{0%,8.537%{opacity:0}8.549%,25.549%{opacity:1}25.561%,100%{opacity:0}}
+  .cw0{opacity:0;animation:cw0 8.20s linear 1 forwards}
+  @keyframes cm0{0%,8.537%{transform:translateX(0)}21.280%,100%{transform:translateX(171.0px)}}
+  .cm0{animation:cm0 8.20s steps(19) 1 forwards}
+  @keyframes o0_0{0%,25.549%{opacity:0}25.561%,100%{opacity:1}}
+  .o0_0{opacity:0;animation:o0_0 8.20s linear 1 forwards}
+  @keyframes o0_1{0%,26.890%{opacity:0}26.902%,100%{opacity:1}}
+  .o0_1{opacity:0;animation:o0_1 8.20s linear 1 forwards}
+  @keyframes o0_2{0%,28.232%{opacity:0}28.244%,100%{opacity:1}}
+  .o0_2{opacity:0;animation:o0_2 8.20s linear 1 forwards}
+  @keyframes o0_3{0%,29.573%{opacity:0}29.585%,100%{opacity:1}}
+  .o0_3{opacity:0;animation:o0_3 8.20s linear 1 forwards}
+  @keyframes o0_4{0%,30.915%{opacity:0}30.927%,100%{opacity:1}}
+  .o0_4{opacity:0;animation:o0_4 8.20s linear 1 forwards}
+  @keyframes ap1{0%,48.110%{opacity:0}48.122%,100%{opacity:1}}
+  .ap1{opacity:0;animation:ap1 8.20s linear 1 forwards}
+  @keyframes tp1{0%,48.110%{transform:translateX(-243.0px)}66.220%,100%{transform:translateX(0)}}
+  .tp1{animation:tp1 8.20s steps(27) 1 forwards}
+  @keyframes cw1{0%,48.110%{opacity:0}48.122%,70.488%{opacity:1}70.500%,100%{opacity:0}}
+  .cw1{opacity:0;animation:cw1 8.20s linear 1 forwards}
+  @keyframes cm1{0%,48.110%{transform:translateX(0)}66.220%,100%{transform:translateX(243.0px)}}
+  .cm1{animation:cm1 8.20s steps(27) 1 forwards}
+  @keyframes o1_0{0%,70.488%{opacity:0}70.500%,100%{opacity:1}}
+  .o1_0{opacity:0;animation:o1_0 8.20s linear 1 forwards}
+  @keyframes o1_1{0%,71.829%{opacity:0}71.841%,100%{opacity:1}}
+  .o1_1{opacity:0;animation:o1_1 8.20s linear 1 forwards}
+  @keyframes fin{0%,87.805%{opacity:0}87.817%,100%{opacity:1}}
+  .fin{opacity:0;animation:fin 8.20s linear 1 forwards}
+</style>
+<rect width="628" height="316" rx="7" fill="#000000"/>
+<rect x="0.5" y="0.5" width="627" height="315" rx="7"
+      fill="none" stroke="#303030"/>
+<rect x="1" y="34.0" width="626" height="281.0"
+      fill="url(#scan)"/>
+<line x1="1" y1="34.0" x2="627" y2="34.0" stroke="#262626"/>
+<rect x="18" y="14" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/><rect x="33" y="14" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/><rect x="48" y="14" width="7" height="7" fill="none" stroke="#4a4a4a" stroke-width="1"/>
+<text class="ttl" x="314.0" y="22" text-anchor="middle">l4rp@github: ~/lonely</text>
+<g class="ap0">
+<text class="dim" x="26.0" y="56.0" textLength="135.0" lengthAdjust="spacing">user@github:~$ </text>
+<g clip-path="url(#clip0)"><text class="cmd" x="161.0" y="56.0" textLength="171.0" lengthAdjust="spacing">neofetch girlfriend</text></g>
+<g class="cw0 cur"><g class="cm0"><rect class="blink" x="161.0" y="43.0" width="9.0" height="15.0"/></g></g>
+</g>
+<text class="out o0_0" x="26.0" y="80.0" textLength="360.0" lengthAdjust="spacing">   ________        girlfriend: not found</text>
+<text class="out o0_1" x="26.0" y="104.0" textLength="279.0" lengthAdjust="spacing">  /        \       status : 404</text>
+<text class="out o0_2" x="26.0" y="128.0" textLength="279.0" lengthAdjust="spacing"> |   404    |      uptime : n/a</text>
+<text class="out o0_3" x="26.0" y="152.0" textLength="324.0" lengthAdjust="spacing">  \________/       disk   : 0 B used</text>
+<text class="out o0_4" x="26.0" y="176.0" textLength="414.0" lengthAdjust="spacing">                   hint   : apt install shower</text>
+<g class="ap1">
+<text class="dim" x="26.0" y="200.0" textLength="135.0" lengthAdjust="spacing">user@github:~$ </text>
+<g clip-path="url(#clip1)"><text class="cmd" x="161.0" y="200.0" textLength="243.0" lengthAdjust="spacing">sudo apt install girlfriend</text></g>
+<g class="cw1 cur"><g class="cm1"><rect class="blink" x="161.0" y="187.0" width="9.0" height="15.0"/></g></g>
+</g>
+<text class="out o1_0" x="26.0" y="224.0" textLength="342.0" lengthAdjust="spacing">E: Unable to locate package girlfriend</text>
+<text class="out o1_1" x="26.0" y="248.0" textLength="414.0" lengthAdjust="spacing">E: Did you mean 'gnome-shell-extension-clock'?</text>
+<g class="fin">
+<text class="dim" x="26.0" y="272.0" textLength="135.0" lengthAdjust="spacing">user@github:~$ </text>
+<rect class="blink" x="161.0" y="259.0" width="9.0" height="15.0"/>
+</g>
+</svg>

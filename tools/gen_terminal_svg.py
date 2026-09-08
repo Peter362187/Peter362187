@@ -354,6 +354,44 @@ SCENES = [
             ], pause=1.2),
         ],
     ),
+    Scene(
+        name="panic",
+        cols=64,
+        title="l4rp@github: ~/panic",
+        steps=[
+            # Erster Step ohne Ausgabe - vim startet einfach und danach
+            # landen die Editor-Kommandos in der Shell.
+            Step("vim config.yaml", [], pause=0.8),
+            Step(":q", ["bash: :q: command not found"], pause=0.5),
+            Step(":wq", ["bash: :wq: command not found"], pause=0.5),
+            Step("pkill vim", ["[1]+  Terminated  vim config.yaml"], pause=1.0),
+            Step("git commit -m \"fix\"", [
+                " 47 files changed, 3 insertions(+), 2891 deletions(-)",
+            ], pause=1.0),
+            Step("git push --force origin main", [
+                "remote: your teammates have been notified",
+            ], pause=1.2),
+        ],
+    ),
+    Scene(
+        name="lonely",
+        cols=64,
+        title="l4rp@github: ~/lonely",
+        steps=[
+            # ASCII-Block belegt Spalte 0-18, die Infospalte beginnt bei 19.
+            Step("neofetch girlfriend", [
+                "   ________        girlfriend: not found",
+                "  /        \\       status : 404",
+                " |   404    |      uptime : n/a",
+                "  \\________/       disk   : 0 B used",
+                "                   hint   : apt install shower",
+            ], pause=1.3),
+            Step("sudo apt install girlfriend", [
+                "E: Unable to locate package girlfriend",
+                "E: Did you mean 'gnome-shell-extension-clock'?",
+            ], pause=1.2),
+        ],
+    ),
 ]
 
 
