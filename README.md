@@ -13,13 +13,18 @@
 -->
 
 <p align="center">
+  <img src="assets/hero.svg" width="753"
+       alt="L4RP - arch linux tooling, python, opsec enabled">
+</p>
+
+<p align="center">
   <img src="assets/header.svg" width="753"
        alt="user@github:~$ whoami — L4RP. SYSTEM STATUS: ONLINE, OPSEC: ENABLED, GIT: CLEAN.">
 </p>
 
----
+<img src="assets/divider.svg" width="753" alt="">
 
-## `$ cat about.txt`
+## `// 01` whoami
 
 ```
 NAME     : L4RP
@@ -37,9 +42,9 @@ I mostly build tooling — the boring layer between "this is possible" and
 "a normal person can actually do it". Currently that means packaging Arch
 Linux into something you can hand to someone without a two-hour phone call.
 
----
+<img src="assets/divider.svg" width="753" alt="">
 
-## `$ ls -la ~/stack`
+## `// 02` stack
 
 <p align="center">
   <img src="assets/stack.svg" width="753"
@@ -57,9 +62,9 @@ drwxr-xr-x  l4rp  git         branches are cheap, force-push is not
 -rw-------  root  opsec       permission denied
 ```
 
----
+<img src="assets/divider.svg" width="753" alt="">
 
-## `$ tail -f /var/log/*`
+## `// 03` daemons
 
 <p align="center">
   <img src="assets/services.svg" width="753"
@@ -71,18 +76,18 @@ drwxr-xr-x  l4rp  git         branches are cheap, force-push is not
        alt="neofetch girlfriend — not found, status 404. Danach apt install being-funny, das stattdessen jawline, filler und height-booster einrichtet; Personality: unchanged.">
 </p>
 
----
+<img src="assets/divider.svg" width="753" alt="">
 
-## `$ sudo pacman -Syu`
+## `// 04` upgrade
 
 <p align="center">
   <img src="assets/pacman.svg" width="753"
        alt="sudo pacman -Syu — Datenbanken synchronisieren, drei Pakete aktualisieren, danach uname -r.">
 </p>
 
----
+<img src="assets/divider.svg" width="753" alt="">
 
-## `$ wsl --list --verbose`
+## `// 05` uplink
 
 Das Projekt baut Arch-ISOs — auch von Windows aus. Die PowerShell ist
 dabei ehrlich gesagt nur der Bootloader.
@@ -92,9 +97,9 @@ dabei ehrlich gesagt nur der Bootloader.
        alt="PowerShell: wsl --list --verbose zeigt Arch als laufende Distribution, danach Wechsel nach Arch und echo 'windows was just the bootloader'.">
 </p>
 
----
+<img src="assets/divider.svg" width="753" alt="">
 
-## `$ git log --stat`
+## `// 06` telemetry
 
 <p align="center">
   <img src="assets/stats.svg" width="753"
@@ -104,9 +109,9 @@ dabei ehrlich gesagt nur der Bootloader.
 <sub>Selbst erzeugt aus der GitHub-API — kein externer Badge-Dienst, der
 ausfallen kann. Aktualisiert sich woechentlich per Action.</sub>
 
----
+<img src="assets/divider.svg" width="753" alt="">
 
-## `$ ls ~/projects`
+## `// 07` payloads
 
 ### [`Easy-Arch-Linux`](https://github.com/Peter362187/Easy-Arch-Linux)
 
@@ -123,9 +128,9 @@ $ ./easy-arch --help
   status    : active
 ```
 
----
+<img src="assets/divider.svg" width="753" alt="">
 
-## `$ cat /dev/urandom | head -c 64`
+## `// 08` classified
 
 <details>
 <summary><code>$ dmesg | tail</code></summary>
@@ -211,13 +216,57 @@ $ history | grep "why"
 
 </details>
 
----
+<details>
+<summary><code>$ cat ~/.config/facts.toml</code></summary>
 
+<br>
+
+| key | value |
+| :-- | :-- |
+| `first_language` | a `.bat` file that opened Notepad. felt unstoppable. |
+| `tabs_or_spaces` | spaces. the linter won that argument years ago. |
+| `worst_bug` | a path with a space in it. on Windows. of course. |
+| `arch_installs` | more than the number of finished side projects |
+| `favourite_error` | `failed to commit transaction (conflicting files)` |
+| `deploy_target` | a USB stick and a lot of optimism |
+
+</details>
+
+<details>
+<summary><code>$ cat HOW_THIS_PAGE_WORKS.md</code></summary>
+
+<br>
+
+Kein Screenshot, kein GIF, kein externer Badge-Dienst.
+
+| Ebene | wie |
+| :-- | :-- |
+| Terminals, Banner, Trenner, Fusszeile | handgeschriebenes SVG, animiert mit CSS-`@keyframes`, im Repo selbst abgelegt |
+| Tipp-Effekt | eine Clip-Maske faehrt per `steps(n)` zeichenweise nach rechts — billiger, als den Text pro Zeichen neu zu setzen |
+| Schriftzug | Pixelraster aus `<rect>`, kein Text — sieht auf jedem Rechner gleich aus, egal welche Schrift installiert ist |
+| Statistik | echte Zahlen aus der GitHub-API, woechentlich per Action neu erzeugt |
+| Animationen | laufen genau einmal und halten den Endzustand — keine Dauerlast, und wer spaeter kommt, sieht das fertige Terminal |
+| Barrierefreiheit | jedes Panel hat `alt`-Text, und bei `prefers-reduced-motion` steht alles still |
+
+```console
+$ python tools/gen_terminal_svg.py    # Terminals
+$ python tools/gen_chrome_svg.py      # Banner, Trenner, Fusszeile
+$ python tools/gen_stats_svg.py       # Statistik aus der API
 ```
-user@github:~$ exit
-logout
-Connection to localhost closed.
-```
+
+Warum ueberhaupt SVG? GitHub entfernt `<script>`, `<style>` und
+`style`-Attribute aus Markdown. Eine SVG-Datei, die per `<img>` eingebunden
+ist, ist dagegen ein eigenes Dokument — die CSS-Keyframes darin laufen ganz
+normal. Das ist der einzige Weg zu echten Animationen ohne fremden Dienst.
+
+</details>
+
+<img src="assets/divider.svg" width="753" alt="">
+
+<p align="center">
+  <img src="assets/footer.svg" width="753"
+       alt="user@github:~$ exit - Connection to localhost closed.">
+</p>
 
 <!--
   Noch hier? Dann verdienst du das hier:

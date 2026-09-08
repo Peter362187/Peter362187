@@ -49,6 +49,26 @@ MARGIN = 20.0                     # Rand um das Fenster, damit der Hintergrund
 FONT_STACK = ("ui-monospace,'DejaVu Sans Mono','Liberation Mono',"
               "'Courier New',monospace")
 
+# Gemeinsame Hintergrund-Bausteine; gen_chrome_svg.py importiert sie, damit
+# Terminals, Banner und Trenner denselben Untergrund haben.
+BG_DEFS = """<pattern id="grid" width="19" height="19" patternUnits="userSpaceOnUse">
+  <circle cx="1" cy="1" r="1" fill="#ffffff" opacity="0.07"/>
+</pattern>
+<radialGradient id="vig" cx="50%" cy="34%" r="78%">
+  <stop offset="0%" stop-color="#1b1b21"/>
+  <stop offset="100%" stop-color="#050506"/>
+</radialGradient>
+<filter id="shadow" x="-12%" y="-12%" width="124%" height="124%">
+  <feDropShadow dx="0" dy="5" stdDeviation="10"
+                flood-color="#000000" flood-opacity="0.85"/>
+</filter>"""
+
+
+def bg_rects(ow: float, oh: float, rx: int = 12) -> str:
+    """Vignette plus Punktraster als Untergrund einer Grafik."""
+    return (f'<rect width="{ow:.0f}" height="{oh:.0f}" rx="{rx}" fill="url(#vig)"/>\n'
+            f'<rect width="{ow:.0f}" height="{oh:.0f}" rx="{rx}" fill="url(#grid)"/>')
+
 # --- Zeiten (Sekunden) -----------------------------------------------------
 
 TYPE_PER_CHAR = 0.055
@@ -266,17 +286,7 @@ def build(scene: Scene) -> str:
 <pattern id="scan" width="1" height="3" patternUnits="userSpaceOnUse">
   <rect width="1" height="1" fill="#ffffff" opacity="0.045"/>
 </pattern>
-<pattern id="grid" width="19" height="19" patternUnits="userSpaceOnUse">
-  <circle cx="1" cy="1" r="1" fill="#ffffff" opacity="0.07"/>
-</pattern>
-<radialGradient id="vig" cx="50%" cy="34%" r="78%">
-  <stop offset="0%" stop-color="#1b1b21"/>
-  <stop offset="100%" stop-color="#050506"/>
-</radialGradient>
-<filter id="shadow" x="-12%" y="-12%" width="124%" height="124%">
-  <feDropShadow dx="0" dy="5" stdDeviation="10"
-                flood-color="#000000" flood-opacity="0.85"/>
-</filter>
+{BG_DEFS}
 <clipPath id="win">
   <rect width="{width}" height="{height}" rx="8"/>
 </clipPath>
@@ -284,8 +294,7 @@ def build(scene: Scene) -> str:
 </defs>
 <style>{static_css}{chr(10).join('  ' + c for c in css)}
 </style>
-<rect width="{ow}" height="{oh}" rx="12" fill="url(#vig)"/>
-<rect width="{ow}" height="{oh}" rx="12" fill="url(#grid)"/>
+{bg_rects(ow, oh)}
 <g transform="translate({MARGIN:.0f},{MARGIN:.0f})">
   <rect width="{width}" height="{height}" rx="8" fill="#000000" filter="url(#shadow)"/>
   <g clip-path="url(#win)">
