@@ -82,7 +82,7 @@ drwxr-xr-x  l4rp  git         branches are cheap, force-push is not
 
 <p align="center">
   <img src="assets/review.svg" width="753"
-       alt="git push origin main - der pre-receive hook lehnt ab, verdict: the code is ass, suggestion: start over. Auch git push --force wird abgelehnt.">
+       alt="git push origin main - remote error: refusing to push, reason: the code is ass. Auch git push --force wird abgelehnt: it is still ass, no.">
 </p>
 
 <img src="assets/divider.svg" width="753" alt="">
